@@ -110,6 +110,33 @@ header a {
     float: left;
 }
 
+.carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .movie-cards {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .movie-card {
+    width: 300px;
+    height: 400px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    /* Outros estilos dos cards */
+  }
+  
+  .prev-button,
+  .next-button {
+    margin-top: 10px;
+    /* Outros estilos dos botões */
+  }
+
+
 /* Banner principal */
 .fav-banner {
     background-image: url("../img/banner/Frame\ 9.svg");
