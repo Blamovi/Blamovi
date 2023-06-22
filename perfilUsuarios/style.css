@@ -1,0 +1,157 @@
+* {
+    background-color: var(--preto);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+
+}
+
+:root {
+    --preto: #000000;
+    --vermelho: #84141A;
+    --branco: #ffffff;
+    --azul: #0C1556;
+    --amarelo: #FBC02C;
+
+    --font1: 'helvetica-compressed-5871d14b6903a.otf';
+    --font2: 'Poppins', sans-serif;
+    --font3: 'TTNorms-Regular.otf';
+    --font4: 'Nova Flat', cursive;
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: var(--preto);
+    height: 70px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posicionamento {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.posicionamento_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posicionamento_header img {
+    width: 35px;
+    height: 28px;
+}
+
+.posicionamento_header>span {
+    padding-left: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+    width: 20px;
+    height: 27px;
+}
+
+header nav {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+header a {
+    color: var(--amarelo);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: var(--font2);
+    font-size: 18px;
+}
+
+/* barra de pesquisa */
+
+#divBusca {
+    background-color: #E0EEEE;
+    border: solid 2px #fdf9f900;
+    border-radius: 10px;
+    width: 320px;
+    height: 31px;
+    margin-inline: auto;
+
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 20px;
+    border: none;
+    height: 27px;
+    width: 243px;
+    border-radius: 8px;
+}
+
+#btnBusca {
+    border: none;
+    float: right;
+    height: 28px;
+    border-radius: 7px;
+    width: 70px;
+    font-weight: bold;
+    background: #FBC02C;
+    font-family: var(--font2);
+   
+}
+img{
+  width: 160px;
+   /* displey flex */
+}
+
+
+aside nav {
+display: flex;
+flex-direction: column;
+gap: 50px;
+margin: 20px;
+
+
+}
+aside nav div img{
+    width: 50px;
+    
+}
+/*.ajuste{
+   margin: 40px;
+   text-align: center; */
+
+aside a {
+    color: var(--branco);
+    font-family: var(--font2);
+    text-decoration: none;
+    
+}
+.menu_lateral{
+    width: 30%;
+}
+
+.ajuste{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;   
+    height: 100vh; 
+    background-color: var(--branco);
+}
