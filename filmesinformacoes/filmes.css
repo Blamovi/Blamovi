@@ -142,10 +142,23 @@ h2{
     margin: 0px 50px;
 }
 
-.botoes1{
+.botoes1 {
     display: flex;
     justify-content: space-around;
-    border: #FBC02C;
+   }
+
+ .bt1{
+    border: solid 1px #FBC02C;
+    text-align: center;
+    width: 120px;
+    border-radius: 10px;
+ }
+
+ .bt2 {
+    border: solid 1px #FBC02C;
+    text-align: center;
+    width: 120px;
+    border-radius: 10px;
  }
 
 .botoes2{
@@ -156,6 +169,9 @@ h2{
 .recomendar{
 background-color: var(--amarelo);
 color: #000000;
+border: solid 0,5px #FBC02C;
+width: 120px;
+border-radius: 10px;
 }
 .coração{
     height: 50px;
