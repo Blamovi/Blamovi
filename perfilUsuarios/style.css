@@ -1,5 +1,5 @@
 * {
-    background-color: var(--preto);
+    /*background-color: var(--preto);*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +11,9 @@
     --preto: #000000;
     --vermelho: #84141A;
     --branco: #ffffff;
+    --cinza: #87898b;
+    --cinza: #DCE0E6;
+    /* cinza padrao*/
     --azul: #0C1556;
     --amarelo: #FBC02C;
 
@@ -107,26 +110,27 @@ header a {
     font-weight: bold;
     background: #FBC02C;
     font-family: var(--font2);
-   
+
 }
-img{
-  width: 160px;
-   /* displey flex */
+
+img {
+    width: 160px;
+    /* displey flex */
 }
 
 
 aside nav {
-display: flex;
-flex-direction: column;
-gap: 50px;
-margin: 20px;
-
-
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px;
 }
-aside nav div img{
+
+aside nav div img {
     width: 50px;
-    
+
 }
+
 /*.ajuste{
    margin: 40px;
    text-align: center; */
@@ -135,23 +139,143 @@ aside a {
     color: var(--branco);
     font-family: var(--font2);
     text-decoration: none;
-    
-}
-.menu_lateral{
-    width: 30%;
+
 }
 
-.ajuste{
+.menu_lateral {
+    width: 20%;
+    background-color: var(--preto);
+}
+
+.ajuste {
     display: flex;
     gap: 10px;
     align-items: center;
     text-transform: capitalize;
 }
 
-main{
+main {
     display: flex;
-    justify-content: space-between;
-    width: 100%;   
-    height: 100vh; 
+    width: 100%;
+    height: 100vh;
     background-color: var(--branco);
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cinza);
+    padding: 80px;
+    background-color: var(--preto);
+}
+
+section div {
+    background-color: var(--cinza);
+    border-radius: 5px;
+}
+
+.imagem1 {
+    width: 100%;
+    height: 240px;
+    border-radius: 3px;
+}
+
+.entre_imagens {
+    width: 140px;
+    display: flex;
+    position: absolute;
+    margin: 2px 50px 100px;
+
+}
+
+.tam {
+    width: 20px;
+
+}
+
+.posicionamento_perfil {
+    display: flex;
+    align-items: center;
+
+}
+
+.posicionamento_perfil span {
+    padding-left: 200px;
+    font-size: 32px;
+    font-family: var(--font2);
+    font-weight: 600;
+
+}
+
+.posicionamento_perfil button {
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    background-color: var(--amarelo);
+    border-radius: 10px;
+    justify-content: end;
+    font-family: var(--font2);
+    font-weight: 600;
+    border: 10px;
+    font-size: 16px;
+    /* margin-left: 600px;*/
+    /* margin-left: 600px;*/
+    margin-left: 480px;
+}
+
+.estrutura {
+    width: 100%;
+    height: 100vh;
+}
+
+.icons img {
+    width: 25px;
+    margin: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 50px;
+    font-family: var(--font2);
+    
+}
+
+.text {
+    font-family: var(--font2);
+    display: flex;
+    padding: 41px 60px 0;
+}
+.classificacao{
+    color: var(--preto);
+    font-family: var(--font2);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--preto);
+    padding: 63px 5px;
+    border-radius: 0%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.series{
+    background-color: var(--amarelo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+.filmes{
+    background-color: var(--amarelo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+
+}
+.classificacao span{
+    border-bottom: 3px solid black;
 }
