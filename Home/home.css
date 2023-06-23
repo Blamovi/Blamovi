@@ -131,7 +131,7 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 250px;
+    margin-top: 5%;
 }
 
 
@@ -172,7 +172,7 @@ header a {
     height: 670px;
     flex-direction: column;
     padding: 0px 10px 10px;
-    margin-top: 250px;
+    margin-top: 5%;
 }
 
 .container{
@@ -229,7 +229,7 @@ h3 {
 }
 
 h2 {
-    margin-top: 8%;
+    margin-top: 12%;
     font-size: 50px;
     height: 90px;
 }
@@ -256,6 +256,19 @@ span {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    position:relative
+}
+
+
+#teste3{
+    position:relative;
+    top:0;
+    padding:4px;
+    transition: all .1s ease-in-out;
+}
+#teste3:hover{
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
 }
 
 .card-linha {
@@ -277,7 +290,7 @@ span {
     display: flex;
     align-items: flex-end;
     flex-direction: row;
-    gap: 60px;
+    gap: 40px;
 }
 .card>a{
     margin-top: 20px;
@@ -291,7 +304,7 @@ span {
 button[type="submit"] {
     margin-top: 5%;
     display: flex;
-    width: 14%;
+    width: 16%;
     padding: 15px;
     background-color: var(--amarelo);
     color: var(--preto);
@@ -300,10 +313,16 @@ button[type="submit"] {
     cursor: pointer;
     margin-left: 39%;
     font-size: 23px;
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
 }
   
 button[type="submit"]:hover {
     background-color: var(--branco);
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
 }
 
 .itens{
