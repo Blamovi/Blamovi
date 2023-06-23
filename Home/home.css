@@ -41,20 +41,26 @@ header {
 }
 
 .posicionamento_header img {
-    width: 35px;
-    height: 28px;
+    width: 45px;
 }
 
 .posicionamento_header>span {
     padding-left: 10px;
 }
 
+.logo>img{
+    color: var(--amarelo);
+}
+
 .logo {
     display: flex;
     align-items: center;
-    color: var(--branco);
+    color: var(--amarelo);
     width: 20px;
     height: 27px;
+}
+.logo>span{
+    color: var(--amarelo);
 }
 
 header nav {
@@ -223,16 +229,15 @@ h3 {
 }
 
 h2 {
-    margin-top: 20%;
+    margin-top: 8%;
     font-size: 50px;
     height: 90px;
 }
 
 h3 {
     color: var(--amarelo);
-    padding: 28px;
     font-size: 20px;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 span {
@@ -272,10 +277,15 @@ span {
     display: flex;
     align-items: flex-end;
     flex-direction: row;
-    gap: 14px;
+    gap: 60px;
 }
 .card>a{
+    margin-top: 20px;
     text-align: center;
+}
+
+.card>a:hover{
+    color: var(--branco);
 }
 
 button[type="submit"] {
@@ -292,9 +302,30 @@ button[type="submit"] {
     font-size: 23px;
 }
   
-  button[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: var(--branco);
-  }
+}
+
+.itens{
+    width: 90%;
+    margin-top: 20px;
+}
+ .streams{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+ }
+ .icones{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 10px;
+ }
+
+.icones>img{
+    height: 25px;
+}
+
 
 
 
@@ -314,6 +345,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    font-family: var(--font1);
 }
 
 footer>div {
@@ -321,6 +353,7 @@ footer>div {
     align-items: center;
     justify-content: space-evenly;
     color: var(--branco);
+    margin-top: 20px;
 }
 footer>div>span,p{
     margin-top: 10px;
@@ -332,3 +365,6 @@ footer>div>img {
     width: 20px;
     height: 27px;
 }
+ footer>div>span{
+    color: var(--amarelo);
+ }
