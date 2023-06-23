@@ -85,11 +85,11 @@ div.newPost div.infoUser{
     justify-content: center;
 }
 
-div.newPost div.infoUser div.imgUser{
+div.newPost div.infoUser img{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #333;
+    /* background-color: #333; */
 }
 
 div.newPost form.formPost{
@@ -127,4 +127,46 @@ div.newPost form.formPost textarea{
     border: transparent;
     margin-right: 15px;
     cursor: pointer;
+}
+
+.posts{
+    margin-bottom: 200px;
+    background-color: #DCE0E6;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.actionBtnPost{
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.infoUserPost{
+    display: flex;
+    align-items: center;
+}
+
+.infoUserPost img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.balanoalvo{
+    margin-bottom: 15px;
+}
+
+.infoUserComments{
+    display: flex;
 }
