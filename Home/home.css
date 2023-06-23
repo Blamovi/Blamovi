@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     background-size: cover;
-
 }
 
 :root {
@@ -20,6 +19,8 @@
 
 
 /* Cabeçalho */
+
+
 header {
     background-color: var(--preto);
     height: 70px;
@@ -59,12 +60,12 @@ header {
     width: 20px;
     height: 27px;
 }
+
 .logo>span{
     color: var(--amarelo);
 }
 
 header nav {
-    /* background-color: brown; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +80,9 @@ header a {
     font-size: 18px;
 }
 
+
 /* barra de pesquisa */
+
 
 #divBusca {
     background-color: #E0EEEE;
@@ -116,7 +119,10 @@ header a {
     float: left;
 }
 
+
 /* Banner principal */
+
+
 .banner {
     background-image: url("../img/banner/Frame\ 9.svg");
     height: 900px;
@@ -125,6 +131,7 @@ header a {
 
 
 /* destaque */
+
 
 .destaque{
     position: relative;
@@ -163,7 +170,9 @@ header a {
     padding-right: 40px;
 }
 
+
 /* comentarios */
+
 
 .comentarios{
     display: flex;
@@ -219,7 +228,7 @@ header a {
 }
 
 
-
+/* Texto */
 
 h2,
 h3 {
@@ -242,13 +251,14 @@ h3 {
 
 span {
 
-    color: var(--branco);
+    color: var(--amarelo);
     font-size: 25px;
     text-align: center;
 }
 
 
 /* seção filmes e series  */
+
 
 .card{
     display: flex;
@@ -292,26 +302,53 @@ span {
     flex-direction: row;
     gap: 40px;
 }
+
 .card>a{
+    color: #7DD7FE;
     margin-top: 20px;
     text-align: center;
 }
 
 .card>a:hover{
+    color: var(--vermelho);
+}
+
+
+.itens{
+    width: 90%;
+    margin-top: 20px;
+}
+.streams{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+ }
+.icones{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 10px;
+ }
+
+.icones>img{
+    height: 25px;
+}
+
+.icones>span{
     color: var(--branco);
 }
 
 button[type="submit"] {
     margin-top: 5%;
     display: flex;
-    width: 16%;
+    width: 12.4%;
     padding: 15px;
     background-color: var(--amarelo);
     color: var(--preto);
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    margin-left: 39%;
+    margin-left: 43%;
     font-size: 23px;
 
     position:relative;
@@ -325,28 +362,6 @@ button[type="submit"]:hover {
     box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
 }
 
-.itens{
-    width: 90%;
-    margin-top: 20px;
-}
- .streams{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
- }
- .icones{
-    display: flex;
-    flex-direction: inherit;
-    align-items: center;
-    gap: 10px;
- }
-
-.icones>img{
-    height: 25px;
-}
-
-
-
 
 /* footer */
 
@@ -359,13 +374,27 @@ button[type="submit"]:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
 }
 
+
 ul {
     color: var(--amarelo);
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     font-family: var(--font1);
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
 }
+
+ul>a {
+    color: var(--amarelo);
+}
+
+ul>a:hover{
+    color: var(--branco);
+}
+
 
 footer>div {
     display: flex;
@@ -374,7 +403,8 @@ footer>div {
     color: var(--branco);
     margin-top: 20px;
 }
-footer>div>span,p{
+
+footer>div>span,p {
     margin-top: 10px;
     color: var(--amarelo);
     text-align: center;
@@ -384,6 +414,7 @@ footer>div>img {
     width: 20px;
     height: 27px;
 }
- footer>div>span{
+
+footer>div>span {
     color: var(--amarelo);
- }
+}
