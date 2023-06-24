@@ -220,6 +220,8 @@ header a {
 
 
 
+/* texto */
+
 
 h2,
 h3 {
@@ -310,17 +312,17 @@ button[type="submit"]:hover {
     width: 90%;
     margin-top: 20px;
 }
- .streams{
+.streams{
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
- }
- .icones{
+}
+.icones{
     display: flex;
     flex-direction: inherit;
     align-items: center;
     gap: 10px;
- }
+}
 
 .icones>img{
     height: 25px;
