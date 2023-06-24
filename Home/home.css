@@ -228,7 +228,9 @@ header a {
 }
 
 
-/* Texto */
+
+/* texto */
+
 
 h2,
 h3 {
@@ -328,7 +330,7 @@ span {
     flex-direction: inherit;
     align-items: center;
     gap: 10px;
- }
+}
 
 .icones>img{
     height: 25px;
@@ -361,7 +363,6 @@ button[type="submit"]:hover {
     top:-4px;
     box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
 }
-
 
 /* footer */
 
