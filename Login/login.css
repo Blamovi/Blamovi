@@ -132,8 +132,8 @@ header a:hover{
 
 
 main {
-  background-image: url("../img/footer/cinema_foto_pexels\ 1\ \(2\).svg");
-  height: calc(100vh - 80px);
+  background-image: url("../img/footer/cinema_foto_pexels\ 1\ \(1\).png");
+  height: calc(100vh - 60px);
 
   background-size: cover;
   font-family: var(--font1);
@@ -141,6 +141,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 }
 
 
@@ -180,7 +181,7 @@ input[type="password"] {
   padding: 10px;
   margin-bottom: 6%;
 
-  border: 2px solid #ccc;
+  border: 2px solid rgb(0 0 0 / 81%);
   border-radius: 5px;
 }
 
@@ -208,15 +209,9 @@ button[type="submit"]:hover {
 }
 
 .icon>img{
-  background-color: #0c1556;
-  width: 50px;
-  height: 50px;
-
-  margin-top: 30px;
-  
-  border: 2px solid;
-  border-radius: 10px;
-  
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
   
 }
 
@@ -226,7 +221,7 @@ button[type="submit"]:hover {
 
 
 ul {
-  margin-top: 20%;
+  margin-top: -6%;
 
   color: var(--amarelo);
   display: flex;
@@ -254,7 +249,7 @@ footer>div {
   align-items: center;
   justify-content: space-evenly;
   color: var(--branco);
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 footer>div>span,p {
