@@ -80,6 +80,9 @@ header a {
     font-size: 18px;
 }
 
+header a:hover{
+    color: var(--vermelho);
+}
 
 /* barra de pesquisa */
 
@@ -343,7 +346,7 @@ span {
 button[type="submit"] {
     margin-top: 5%;
     display: flex;
-    width: 12.4%;
+    width: 14%;
     padding: 15px;
     background-color: var(--amarelo);
     color: var(--preto);
@@ -389,11 +392,12 @@ ul {
 }
 
 ul>a {
+    text-decoration: none;
     color: var(--amarelo);
 }
 
 ul>a:hover{
-    color: var(--branco);
+    color: var(--);
 }
 
 

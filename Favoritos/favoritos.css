@@ -14,12 +14,14 @@
     --azul: #0C1556;
     --amarelo: #FBC02C;
 
-    --font1: 'helvetica-compressed-5871d14b6903a.otf';
+    --font1:'Archivo', sans-serif;
     --font2: 'TTNorms-Regular.otf';
 }
 
 
 /* Cabeçalho */
+
+
 header {
     background-color: var(--preto);
     height: 70px;
@@ -55,6 +57,7 @@ header {
     color: var(--branco);
     width: 20px;
     height: 27px;
+    gap: 5px;
 }
 
 header nav {
@@ -64,12 +67,18 @@ header nav {
     width: 450px;
 }
 
+
+
 header a {
     color: var(--amarelo);
     text-transform: uppercase;
     text-decoration: none;
     font-family: var(--font1);
     font-size: 18px;
+}
+
+header a:hover{
+    color: var(--vermelho);
 }
 
 /* barra de pesquisa */
@@ -102,8 +111,9 @@ header a {
     width: 70px;
     font-weight: bold;
     background: #FBC02C;
-    ;
+
 }
+
 
 #divBusca img {
     float: left;
@@ -307,6 +317,7 @@ button[type="submit"]:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
 }
 
+
 ul {
     color: var(--amarelo);
     display: flex;
@@ -320,12 +331,14 @@ ul {
 }
 
 ul>a {
+    text-decoration: none;
     color: var(--amarelo);
 }
 
 ul>a:hover{
-    color: var(--branco);
+    color: var(--vermelho);
 }
+
 
 footer>div {
     display: flex;
@@ -335,15 +348,13 @@ footer>div {
     margin-top: 20px;
 }
 
-
-footer>div>span,p{
+footer>div>span,p {
     margin-top: 10px;
     color: var(--amarelo);
     text-align: center;
 }
 
 footer>div>img {
-    margin-top: 10%;
     width: 20px;
     height: 27px;
 }

@@ -1,427 +1,6 @@
-CSS HOME
 
-* {
-    background-color: var(--preto);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-size: cover;
-}
+               HOME HTML
 
-:root {
-    --preto: #000000;
-    --vermelho: #84141A;
-    --branco: #ffffff;
-    --azul: #0C1556;
-    --amarelo: #FBC02C;
-
-    --font1:'Archivo', sans-serif;
-    --font2: 'TTNorms-Regular.otf';
-}
-
-
-/* Cabeçalho */
-
-
-header {
-    background-color: var(--preto);
-    height: 70px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.posicionamento {
-    width: 1400px;
-    margin: 0 auto;
-}
-
-.posicionamento_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.posicionamento_header img {
-    width: 45px;
-}
-
-.posicionamento_header>span {
-    padding-left: 10px;
-}
-
-.logo>img{
-    color: var(--amarelo);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    color: var(--amarelo);
-    width: 20px;
-    height: 27px;
-}
-
-.logo>span{
-    color: var(--amarelo);
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 450px;
-}
-
-header a {
-    color: var(--amarelo);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: var(--font1);
-    font-size: 18px;
-}
-
-
-/* barra de pesquisa */
-
-
-#divBusca {
-    background-color: #E0EEEE;
-    border: solid 2px #fdf9f900;
-    border-radius: 10px;
-    width: 320px;
-    height: 31px;
-
-}
-
-#txtBusca {
-    float: left;
-    background-color: transparent;
-    padding-left: 5px;
-    font-size: 20px;
-    border: none;
-    height: 27px;
-    width: 243px;
-    border-radius: 8px;
-}
-
-#btnBusca {
-    border: none;
-    float: right;
-    height: 28px;
-    border-radius: 7px;
-    width: 70px;
-    font-weight: bold;
-    background: #FBC02C;
-    ;
-}
-
-#divBusca img {
-    float: left;
-}
-
-
-/* Banner principal */
-
-
-.banner {
-    background-image: url("../img/banner/Frame\ 9.svg");
-    height: 900px;
-
-}
-
-
-/* destaque */
-
-
-.destaque{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
-}
-
-
-
-.destaque_conteudo{
-    display: flex;
-    gap: 50px;
-    align-items: flex-end;
-}
-
-.destaque_conteudo img{
-    padding-left: 25px;
-   max-width: 650px;
-   width: 100%;
-}
-
-.destaque_conteudo h2{
-    font-family: var(--font1);
-    height: 190px;
-    font-size: 40px;
-    text-transform: uppercase;
-
-}
-
-.destaque p{
-    font-family: var(--font1);
-    color: var(--branco);
-    font-size: 18px;
-    padding-right: 40px;
-}
-
-
-/* comentarios */
-
-
-.comentarios{
-    display: flex;
-    background-color: #FBC02C;
-    width: auto;
-    height: 670px;
-    flex-direction: column;
-    padding: 0px 10px 10px;
-    margin-top: 5%;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 90%;
-}
-
-.container_conteudo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--amarelo);
-    
-}
-
-.container img{
-    max-width: 150px;
-    width: 50%;
-    background-color: var(--amarelo);
-}
-
-.container_conteudo div{
-    font-family: var(--font1);
-    text-align: center;
-    background-color: var(--amarelo);
-}
-
-.container h3{
-    color: var(--preto);
-    font-weight: 200;
-    font-size: 48px;
-    line-height: 52px;
-    background-color: var(--amarelo);
-}
-
-.container p{
-    color: var(--preto);
-    font-style: italic;
-    font-size: 25px;
-    line-height: 45px;
-    background-color: var(--amarelo);
-}
-
-
-/* Texto */
-
-h2,
-h3 {
-    font-family: var(--font1);
-    color: var(--amarelo);
-    text-align: center;
-}
-
-h2 {
-    margin-top: 12%;
-    font-size: 50px;
-    height: 90px;
-}
-
-h3 {
-    color: var(--amarelo);
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-span {
-
-    color: var(--amarelo);
-    font-size: 25px;
-    text-align: center;
-}
-
-
-/* seção filmes e series  */
-
-
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    position:relative
-}
-
-
-#teste3{
-    position:relative;
-    top:0;
-    padding:4px;
-    transition: all .1s ease-in-out;
-}
-#teste3:hover{
-    top:-4px;
-    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
-}
-
-.card-linha {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-}
-
-.card>img {
-    height: 400px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    max-width: 90%;
-}
-
-.card>div {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    gap: 40px;
-}
-
-.card>a{
-    color: #7DD7FE;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.card>a:hover{
-    color: var(--vermelho);
-}
-
-
-.itens{
-    width: 90%;
-    margin-top: 20px;
-}
-.streams{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
- }
-.icones{
-    display: flex;
-    flex-direction: inherit;
-    align-items: center;
-    gap: 10px;
- }
-
-.icones>img{
-    height: 25px;
-}
-
-.icones>span{
-    color: var(--branco);
-}
-
-button[type="submit"] {
-    margin-top: 5%;
-    display: flex;
-    width: 12.4%;
-    padding: 15px;
-    background-color: var(--amarelo);
-    color: var(--preto);
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-left: 43%;
-    font-size: 23px;
-
-    position:relative;
-    top:0;
-    transition: all .1s ease-in-out;
-}
-  
-button[type="submit"]:hover {
-    background-color: var(--branco);
-    top:-4px;
-    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
-}
-
-
-/* footer */
-
-
-.img-footer {
-    margin-top: 200px;
-    width: 100%;
-    background-size: cover;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
-}
-
-
-ul {
-    color: var(--amarelo);
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-family: var(--font1);
-
-    position:relative;
-    top:0;
-    transition: all .1s ease-in-out;
-}
-
-ul>a {
-    color: var(--amarelo);
-}
-
-ul>a:hover{
-    color: var(--branco);
-}
-
-
-footer>div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: var(--branco);
-    margin-top: 20px;
-}
-
-footer>div>span,p {
-    margin-top: 10px;
-    color: var(--amarelo);
-    text-align: center;
-}
-
-footer>div>img {
-    width: 20px;
-    height: 27px;
-}
-
-footer>div>span {
-    color: var(--amarelo);
-}
-
-HTML HOME
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -512,6 +91,7 @@ HTML HOME
                 <div class="card" id="teste3" >
                     <img src="../img/filmes-f/batman-(cav-das-tre).webp" alt="">
                     <h3>Batman: O Cavaleiro das Trevas</h3>
+
                     <div class="itens">
                         <div class="streams">
                             <img src="../img/streams/HBO-MAX.png" alt="">
@@ -528,6 +108,7 @@ HTML HOME
                 <div class="card" id="teste3">
                     <img src="../img/filmes-f/joker.webp" alt="">
                     <h3>Joker</h3>
+
                     <div class="itens">
                         <div class="streams">
                             <img src="../img/streams/HBO-MAX.png" alt="">
@@ -544,6 +125,7 @@ HTML HOME
                 <div class="card" id="teste3">
                     <img src="../img/filmes-f/image 111.jpg" alt="">
                     <h3>Vingadores: Ultimato</h3>
+                    
                     <div class="itens">
                         <div class="streams">
                             <img src="../img/streams/DISNEY.png" alt="">
@@ -560,6 +142,7 @@ HTML HOME
                 <div class="card" id="teste3">
                     <img src="../img/filmes-f/gladiador.jpg" alt="">
                     <h3>Gladiador</h3>
+                    
                     <div class="itens">
                         <div class="streams">
                             <img src="../img/streams/NETFLIX.png" alt="">
@@ -861,14 +444,17 @@ HTML HOME
 
 </html>
 
-CSS FAV
+
+
+                        HOME CSS
+
+
 * {
     background-color: var(--preto);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-size: cover;
-
 }
 
 :root {
@@ -878,12 +464,14 @@ CSS FAV
     --azul: #0C1556;
     --amarelo: #FBC02C;
 
-    --font1: 'helvetica-compressed-5871d14b6903a.otf';
+    --font1:'Archivo', sans-serif;
     --font2: 'TTNorms-Regular.otf';
 }
 
 
 /* Cabeçalho */
+
+
 header {
     background-color: var(--preto);
     height: 70px;
@@ -905,24 +493,30 @@ header {
 }
 
 .posicionamento_header img {
-    width: 35px;
-    height: 28px;
+    width: 45px;
 }
 
 .posicionamento_header>span {
     padding-left: 10px;
 }
 
+.logo>img{
+    color: var(--amarelo);
+}
+
 .logo {
     display: flex;
     align-items: center;
-    color: var(--branco);
+    color: var(--amarelo);
     width: 20px;
     height: 27px;
 }
 
+.logo>span{
+    color: var(--amarelo);
+}
+
 header nav {
-    /* background-color: brown; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -937,7 +531,12 @@ header a {
     font-size: 18px;
 }
 
+header a:hover{
+  color: var(--vermelho);
+}
+
 /* barra de pesquisa */
+
 
 #divBusca {
     background-color: #E0EEEE;
@@ -974,68 +573,136 @@ header a {
     float: left;
 }
 
-.carousel {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .movie-cards {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .movie-card {
-    width: 300px;
-    height: 400px;
-    margin-right: 10px;
-    background-color: #f0f0f0;
-    /* Outros estilos dos cards */
-  }
-  
-  .prev-button,
-  .next-button {
-    margin-top: 10px;
-    /* Outros estilos dos botões */
-  }
-
 
 /* Banner principal */
-.fav-banner {
+
+
+.banner {
     background-image: url("../img/banner/Frame\ 9.svg");
-    height: calc(153vh - 103px);
-    background-size: cover;
-    color: var(--branco);
-    font-family: var(--font1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 900px;
+
 }
 
-.fav-banner>div>img {
-    height: calc(100vh - 80px);
-    background-size: cover;
-    position: absolute;
+
+/* destaque */
+
+
+.destaque{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
 }
+
+
+
+.destaque_conteudo{
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+.destaque_conteudo img{
+    padding-left: 25px;
+   max-width: 650px;
+   width: 100%;
+}
+
+.destaque_conteudo h2{
+    font-family: var(--font1);
+    height: 190px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.destaque p{
+    font-family: var(--font1);
+    color: var(--branco);
+    font-size: 18px;
+    padding-right: 40px;
+}
+
+
+/* comentarios */
+
+
+.comentarios{
+    display: flex;
+    background-color: #FBC02C;
+    width: auto;
+    height: 670px;
+    flex-direction: column;
+    padding: 0px 10px 10px;
+    margin-top: 5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+
+.container_conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--amarelo);
+    
+}
+
+.container img{
+    max-width: 150px;
+    width: 50%;
+    background-color: var(--amarelo);
+}
+
+.container_conteudo div{
+    font-family: var(--font1);
+    text-align: center;
+    background-color: var(--amarelo);
+}
+
+.container h3{
+    color: var(--preto);
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 52px;
+    background-color: var(--amarelo);
+}
+
+.container p{
+    color: var(--preto);
+    font-style: italic;
+    font-size: 25px;
+    line-height: 45px;
+    background-color: var(--amarelo);
+}
+
+
+
+/* texto */
+
 
 h2,
 h3 {
-    font-family: var(--font2);
+    font-family: var(--font1);
     color: var(--amarelo);
     text-align: center;
 }
 
 h2 {
-    margin-top: 200px;
+    margin-top: 12%;
     font-size: 50px;
-    height: 200px;
+    height: 90px;
 }
 
 h3 {
     color: var(--amarelo);
-    padding: 28px;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 span {
@@ -1048,32 +715,113 @@ span {
 
 /* seção filmes e series  */
 
-.fav-card-linha {
+
+.card{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0 20px 20px 0;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position:relative
 }
 
-.fav-card>img {
-    height: 470px;
-    width: 320px;
+
+#teste3{
+    position:relative;
+    top:0;
+    padding:4px;
+    transition: all .1s ease-in-out;
+}
+#teste3:hover{
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+.card-linha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.card>img {
+    height: 400px;
+    width: 300px;
     object-fit: cover;
     border-radius: 10px;
+    max-width: 90%;
 }
 
-.fav-card>div {
+.card>div {
     display: flex;
-    justify-content: space-evenly;
     align-items: flex-end;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.card>a{
+    color: #7DD7FE;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card>a:hover{
+    color: var(--vermelho);
 }
 
 
+.itens{
+    width: 90%;
+    margin-top: 20px;
+}
+.streams{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+ }
+.icones{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 10px;
+}
+
+.icones>img{
+    height: 25px;
+}
+
+.icones>span{
+    color: var(--branco);
+}
+
+button[type="submit"] {
+    margin-top: 5%;
+    display: flex;
+    width: 14%;
+    padding: 15px;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 43%;
+    font-size: 23px;
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
+}
+  
+button[type="submit"]:hover {
+    background-color: var(--branco);
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
 
 /* footer */
 
 
-.fav-img-footer {
+.img-footer {
     margin-top: 200px;
     width: 100%;
     background-size: cover;
@@ -1081,20 +829,38 @@ span {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
 }
 
+
 ul {
     color: var(--amarelo);
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    font-family: var(--font1);
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
 }
+
+ul>a {
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+ul>a:hover{
+    color: var(--vermelho);
+}
+
 
 footer>div {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     color: var(--branco);
+    margin-top: 20px;
 }
-footer>div>span,p{
+
+footer>div>span,p {
     margin-top: 10px;
     color: var(--amarelo);
     text-align: center;
@@ -1105,10 +871,16 @@ footer>div>img {
     height: 27px;
 }
 
+footer>div>span {
+    color: var(--amarelo);
+}
 
-HTML FAV 
 
-<!DOCTYPE html>
+
+                    Favoritos HTML
+
+
+                    <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -1116,10 +888,9 @@ HTML FAV
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="import" href="../img/fonts-txt/Helvetica-Fonts/helvetica-compressed-5871d14b6903a.otf">
-    <link rel="import" href="../img/fonts-txt/TT-Norms-Fonts/TTNorms-Regular.otf">
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Nova+Flat&family=Poppins:wght@200;300;400;600;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="favoritos.css">
     <title>Favoritos</title>
@@ -1150,7 +921,7 @@ HTML FAV
             <nav>
                 <a href="../Home/home.html">Home</a>
                 <a href="../Favoritos/favoritos.html">Favoritos</a>
-                <a href="">Cadastro</a>
+                <a href="../cadastroUsuario/cadastrousuario.html">Cadastro</a>
                 <a href="../Login/login.html">Login</a>
             </nav>
         </div>
@@ -1164,41 +935,75 @@ HTML FAV
             <h2>❤ Filmes Favoritos</h2>
             <div class="fav-card-linha">
                 <img src="../img/elementos/Polygon 11.png" alt="">
-                <div class="fav-card">
+
+                <div class="fav-card" id="teste3">
                     <img src="../img/filmes-f/batman-(cav-das-tre).webp" alt="">
                     <h3>Batman: O Cavaleiro das Trevas</h3>
-                    <div>
-                        
-                        <img src="../img/streams/HBO-MAX.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/filmes-f/joker.webp" alt="">
                     <h3>Joker</h3>
-                    <div>
-                       
-                        <img src="../img/streams/HBO-MAX.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/filmes-f/image 111.jpg" alt="">
                     <h3>Vingadores: Ultimato</h3>
-                    <div>
-                        
-                        <img src="../img/streams/DISNEY.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/DISNEY.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/filmes-f/gladiador.jpg" alt="">
                     <h3>Gladiador</h3>
-                    <div>
-                        
-                        <img src="../img/streams/NETFLIX.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/NETFLIX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
+
                 <img src="../img/elementos/Polygon 15.png" alt="">
             </div>
         </section>
@@ -1208,55 +1013,91 @@ HTML FAV
             <h2>❤ Series Favoritos</h2>
             <div class="fav-card-linha">
                 <img src="../img/elementos/Polygon 11.png" alt="">
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/series-f/mandalorian.jpg" alt="">
                     <h3>mandalorian</h3>
-                    <div>
-                       
-                        <img src="../img/streams/DISNEY.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/series-f/A-casa-dos-dragões.jpg" alt="">
                     <h3>A Casa dos Dragões</h3>
-                    <div>
-                        
-                        <img src="../img/streams/HBO-MAX.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
+
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/series-f/Wandinha.webp" alt="">
                     <h3>Wandinha</h3>
-                    <div>
-                       
-                        <img src="../img/streams/DISNEY.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/DISNEY.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
+                
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/series-f/The-last-of-us.jpg" alt="">
                     <h3>the last of us</h3>
-                    <div>
                     
-                        <img src="../img/streams/HBO-MAX.png" alt="">
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
+
                 </div>
                 <img src="../img/elementos/Polygon 15.png" alt="">
             </div>
         </section>
 
     </main>
+    
     <footer>
         <img class="img-footer" src="../img/footer/cinema_foto_pexels 1 (2).svg" alt="">
-        <ul>
-            <li>Home</li>
-            <li>Login</li>
-            <li>Pesquisar</li>
-            <li>Noticias</li>
-            <li>Favoritos</li>
-            <li>Informações</li>
+        <ul>          
+            <a href="../Home/home.html">Home</a>
+            <a href="../Login/login.html">Login</a>
+            <a href="">Pesquisar</a>
+            <a href="">Noticias</a>
+            <a href="../Favoritos/favoritos.html">Favoritos</a>
+            <a href="../filmesinformacoes/filmes.html">Informações</a>
         </ul>
         <div>
             <div>
@@ -1270,7 +1111,442 @@ HTML FAV
 
 </html>
 
-HTML LOGIN
+
+
+                Favoritos CSS
+
+
+
+* {
+    background-color: var(--preto);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+:root {
+    --preto: #000000;
+    --vermelho: #84141A;
+    --branco: #ffffff;
+    --azul: #0C1556;
+    --amarelo: #FBC02C;
+
+    --font1:'Archivo', sans-serif;
+    --font2: 'TTNorms-Regular.otf';
+}
+
+
+/* Cabeçalho */
+
+
+header {
+    background-color: var(--preto);
+    height: 70px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posicionamento {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.posicionamento_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posicionamento_header img {
+    width: 45px;
+}
+
+.posicionamento_header>span {
+    padding-left: 10px;
+}
+
+.logo>img{
+    color: var(--amarelo);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--amarelo);
+    width: 20px;
+    height: 27px;
+}
+
+.logo>span{
+    color: var(--amarelo);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+header a {
+    color: var(--amarelo);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+header a:hover{
+  color: var(--vermelho);
+}
+
+
+/* barra de pesquisa */
+
+
+#divBusca {
+    background-color: #E0EEEE;
+    border: solid 2px #fdf9f900;
+    border-radius: 10px;
+    width: 320px;
+    height: 31px;
+
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 20px;
+    border: none;
+    height: 27px;
+    width: 243px;
+    border-radius: 8px;
+}
+
+#btnBusca {
+    border: none;
+    float: right;
+    height: 28px;
+    border-radius: 7px;
+    width: 70px;
+    font-weight: bold;
+    background: #FBC02C;
+    ;
+}
+
+#divBusca img {
+    float: left;
+}
+
+
+/* Banner principal */
+
+
+.banner {
+    background-image: url("../img/banner/Frame\ 9.svg");
+    height: 900px;
+
+}
+
+
+/* destaque */
+
+
+.destaque{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+
+.destaque_conteudo{
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+.destaque_conteudo img{
+    padding-left: 25px;
+   max-width: 650px;
+   width: 100%;
+}
+
+.destaque_conteudo h2{
+    font-family: var(--font1);
+    height: 190px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.destaque p{
+    font-family: var(--font1);
+    color: var(--branco);
+    font-size: 18px;
+    padding-right: 40px;
+}
+
+
+/* comentarios */
+
+
+.comentarios{
+    display: flex;
+    background-color: #FBC02C;
+    width: auto;
+    height: 670px;
+    flex-direction: column;
+    padding: 0px 10px 10px;
+    margin-top: 5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+
+.container_conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--amarelo);
+    
+}
+
+.container img{
+    max-width: 150px;
+    width: 50%;
+    background-color: var(--amarelo);
+}
+
+.container_conteudo div{
+    font-family: var(--font1);
+    text-align: center;
+    background-color: var(--amarelo);
+}
+
+.container h3{
+    color: var(--preto);
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 52px;
+    background-color: var(--amarelo);
+}
+
+.container p{
+    color: var(--preto);
+    font-style: italic;
+    font-size: 25px;
+    line-height: 45px;
+    background-color: var(--amarelo);
+}
+
+
+
+/* texto */
+
+
+h2,
+h3 {
+    font-family: var(--font1);
+    color: var(--amarelo);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 12%;
+    font-size: 50px;
+    height: 90px;
+}
+
+h3 {
+    color: var(--amarelo);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+span {
+
+    color: var(--amarelo);
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* seção filmes e series  */
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position:relative
+}
+
+
+#teste3{
+    position:relative;
+    top:0;
+    padding:4px;
+    transition: all .1s ease-in-out;
+}
+#teste3:hover{
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+.card-linha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.card>img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.card>div {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.card>a{
+    color: #7DD7FE;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card>a:hover{
+    color: var(--vermelho);
+}
+
+
+.itens{
+    width: 90%;
+    margin-top: 20px;
+}
+.streams{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+ }
+.icones{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 10px;
+}
+
+.icones>img{
+    height: 25px;
+}
+
+.icones>span{
+    color: var(--branco);
+}
+
+button[type="submit"] {
+    margin-top: 5%;
+    display: flex;
+    width: 14%;
+    padding: 15px;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 43%;
+    font-size: 23px;
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
+}
+  
+button[type="submit"]:hover {
+    background-color: var(--branco);
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+/* footer */
+
+
+.img-footer {
+    margin-top: 200px;
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
+}
+
+
+ul {
+    color: var(--amarelo);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: var(--font1);
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
+}
+
+ul>a {
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+ul>a:hover{
+    color: var(--vermelho);
+}
+
+
+footer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--branco);
+    margin-top: 20px;
+}
+
+footer>div>span,p {
+    margin-top: 10px;
+    color: var(--amarelo);
+    text-align: center;
+}
+
+footer>div>img {
+    width: 20px;
+    height: 27px;
+}
+
+footer>div>span {
+    color: var(--amarelo);
+}
+
+
+                LOGIN HTML
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -1348,226 +1624,13 @@ HTML LOGIN
 
 </html>
 
-CSS LOGIN
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-size: cover;
-  
-  }
-  
-  :root {
-    --preto: #000000;
-    --vermelho: #84141A;
-    --branco: #ffffff;
-    --azul: #0C1556;
-    --amarelo: #FBC02C;
-  
-    --font1: 'helvetica-compressed-5871d14b6903a.otf';
-    --font2: 'TTNorms-Regular.otf';
-  }
-  
-header {
-  background-color: var(--preto);
-  height: 50px;
-  padding: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.posicionamento {
-  width: 1400px;
-  margin: 0 auto;
-}
 
-.posicionamento_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.posicionamento_header img {
-  width: 35px;
-  height: 28px;
-}
+                LOGIN CSS
 
-.posicionamento_header>span {
-  padding-left: 10px;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
-  color: var(--branco);
-  width: 20px;
-  height: 27px;
-}
 
-header nav {
-  /* background-color: brown; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 450px;
-}
 
-header a {
-  color: var(--amarelo);
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: var(--font1);
-  font-size: 18px;
-}
 
-/* barra de pesquisa */
-
-#divBusca {
-  background-color: #E0EEEE;
-  border: solid 2px #fdf9f900;
-  border-radius: 10px;
-  width: 320px;
-  height: 31px;
-
-}
-
-#txtBusca {
-  float: left;
-  background-color: transparent;
-  padding-left: 5px;
-  font-size: 20px;
-  border: none;
-  height: 27px;
-  width: 243px;
-  border-radius: 8px;
-}
-
-#btnBusca {
-  border: none;
-  float: right;
-  height: 28px;
-  border-radius: 7px;
-  width: 70px;
-  font-weight: bold;
-  background: #FBC02C;
-  ;
-}
-
-#divBusca img {
-  float: left;
-}
-  
-  
-  /* container login */
-  body{
-    display: inline;
-    background-image: url("../img/footer/cinema_foto_pexels\ 1\ \(2\).svg");
-  }
-  
-  .login-container {
-    max-width: 30%;
-    margin: 150px auto;
-    
-    background: linear-gradient(270deg, black, transparent);
-  
-    padding: 50px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2,p,a {
-    color: var(--branco);
-    text-align: center;
-  }
-  
-  
-  input[type="text"],
-  input[type="password"] {
-  
-  
-    width: 100%;
-  
-  
-    padding: 10px;
-  
-  
-    margin-bottom: 10px;
-  
-  
-    border: 2px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-  
-  
-    padding: 10px;
-  
-  
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  .icon {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    
-  }
-  
-  .icon>img{
-    background-color: #0c1556;
-    width: 50px;
-    height: 50px;
-  
-    margin-top: 30px;
-    /* padding: 15px; */
-    border: 2px solid;
-    border-radius: 10px;
-    
-    /* padding-left: 10px; */
-  }
-  
-  /* footer */
-  .img-footer {
-    margin-top: 200px;
-    width: 100%;
-    background-size: cover;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
-}
-
-ul {
-    color: var(--amarelo);
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-footer>div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: var(--branco);
-}
-footer>div>span,p{
-    margin-top: 10px;
-    color: var(--amarelo);
-    text-align: center;
-}
-
-footer>div>img {
-    width: 20px;
-    height: 27px;
-}
