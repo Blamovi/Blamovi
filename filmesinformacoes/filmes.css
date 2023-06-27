@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     background-size: cover;
+    font-family: var(--font3);
 
 }
 
@@ -16,13 +17,14 @@
 
     --font1: 'helvetica-compressed-5871d14b6903a.otf';
     --font2: 'TTNorms-Regular.otf';
+    --font3: 'Poppins', sans-serif;
 }
 
 
 /* Cabeçalho */
 header {
     background-color: var(--preto);
-    height: 50px;
+    height: 70px;
     padding: 25px;
     display: flex;
     align-items: center;
@@ -69,8 +71,8 @@ header a {
     color: var(--amarelo);
     text-transform: uppercase;
     text-decoration: none;
-    font-family: var(--font1);
-    font-size: 18px;
+    font-family: var(--font3);
+    font-size: 16px;
 }
 
 /* barra de pesquisa */
@@ -81,7 +83,7 @@ header a {
     border-radius: 10px;
     width: 320px;
     height: 31px;
-
+margin-inline: auto;
 }
 
 #txtBusca {
@@ -103,62 +105,79 @@ header a {
     width: 70px;
     font-weight: bold;
     background: #FBC02C;
-    ;
+    font-family: var(--font3)
 }
 
-#divBusca img {
-    float: left;
+.logo_no_header {
+        width: 160px;
 }
-
-
-
-
-
 
 /* Filmes */
 
 
+.img_rec{
+width: 100%;
+height: 250px;
+}
 h2{
     color: var(--amarelo);
-    font-size: 30px;
-    text-align: center;
-    padding-top: 30px;
-}
+    font-size: 37px;
+    text-align: left;
+    margin: -100px 0px 0px 60px;
+    }
+
+h3{
+    color: var(--branco);
+    font-size: 12px;
+    text-align: left;
+    margin-left: 60px;
+ }
 
 .paragrafo_inicial{
-    color: var(--amarelo);
-    font-size: 35px;
-    text-align: center;
-    padding-bottom: 30px;
+   color: var(--branco);
+    font-size: 12px;
+    text-align: left;
+    margin: 5px 0px 0px 60px;
 }
 
 
 .banner_trailer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
-.batman img{
+.imgbtm{
     height: 400px;
     margin: 0px 30px;
-    border: solid 1px  #FBC02C;
-    border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid white;
 }
 
 .botoes1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
    }
+
+   .referências img{
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+margin: 0px 0px 10px 30px;
+    }
 
  .bt1{
     border: solid 1px #FBC02C;
+    color: #FBC02C;
     font-size: 12px;
     text-align: center;
     width: 105px;
     border-radius: 10px;
+    margin-right: 20px;
  }
 
  .bt2 {
     border: solid 1px #FBC02C;
+    color: #FBC02C;
     font-size: 12px;
     text-align: center;
     width: 105px;
@@ -167,18 +186,25 @@ h2{
 
 .botoes2{
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
 }
 
 .recomendar{
-background-color: var(--amarelo);
+background-color: #FBC02C;
 color: #000000;
 border: solid 0,5px #FBC02C;
-width: 120px;
+width: 140px;
+height: 30px;
+text-align: center;
 border-radius: 10px;
+margin-left: 20px;
+margin-right: 90px;
 }
 .coração{
-    height: 50px;
+    width: 40px;
+    height: 33px;
+    margin-left: 20px;
+    align-items: center;
 }
 
 .trailer a{
@@ -192,19 +218,19 @@ border-radius: 10px;
 /* seção 2 */
 
 .sinopse{
-    margin: 35px 0px 35px 0px;
+    margin: 25px 0px 65px 0px;
+    padding: 0px 25px 0px 25px;
     color: white;
-    border-right: yellow 1px solid;
     line-height: 25px;
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: justify;
 }
 
 .topico{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: yellow 1px solid;
     width: 100%;
 }
 
@@ -247,16 +273,15 @@ justify-content:space-around;
 
 .ator{
     color: #fbc02c;
-    padding-left: 10px;
+    padding-left: 8px;
     font-size: 25px;
     text-align: left;
-    font-weight: bold;
-    }
+       }
 
 .personagem{
     color:#E0EEEE;
     padding-left: 5px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
 }
 
@@ -277,7 +302,7 @@ height: 50px;
 /* Aside */
 
 .informacoes_direita{
-    width: 70%;
+    width: 80%;
 }
     
 
@@ -306,7 +331,7 @@ height: 50px;
 }
 
 .img2{
-    margin-top: 25px;
+    margin-top: 15px;
      width: 60px;
     height: 60px;
 }
@@ -314,20 +339,23 @@ height: 50px;
 .titulo1{
     color: #FBC02C;
     text-align: center;
-    font-size: 25px;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 15px;
 }
 
 .subtitulo1{
     color: #ffffff;
     text-align: center;
     font-size: 15px;
+    margin-bottom: 15px;
 }
 
 
 .subtitulo2{
     color: #ffffff;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     width: 120px;
 }
 
@@ -347,25 +375,88 @@ height: 50px;
 
 .img3{
     margin-top: 25px;
-        width: 40px;
+        width: 115px;
     height: 50px;
 }
 
 
 .subtitulo3{
 color: #FBC02C;
-font-size: 25px;
+font-size: 50px;
 }
 
-.usuario{
+.separar_comentario{
+    margin-top: 80px;
+    border-top: 1px solid #FBC02C;
+}
+
+
+.Comentarios_filmes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.img4{
+    margin-right: 20px;
+    width: 40px;
+height: 43px;
+}
+
+.Comentarios_todos{
+    display: flex;
+}
+
+
+.img_coment{
+justify-content: center;
+align-items: center;
+margin: 10px 0px 0px 20px;
+}
+
+.ricardo{
+    width: 100px;
+    height: 100px;
+    margin-top: 105px;
+}
+
+
+.marcos{
+    width: 100px;
+    height: 100px;
+    margin-top: 65px;
+    border-radius: 50px;
+}
+.usuario1{
     color: #FBC02C;
+    font-size: 25px;
+    margin-top: 100px;
+    padding: 0px 0px 0px 30px;
+}
+
+.usuario2{
+    color: #FBC02C;
+    font-size: 25px;
+    margin-top: 60px;
+    padding: 0px 0px 0px 30px;
 }
 
 .comentario_texto{
     color: #ffffff;
+    text-align: justify;
+    padding: 0px 50px 0px 30px;
+}
+.like{
+    width: 35px;
+    height: 35px;
+    margin-left: 25px;
 }
 
-
+.figurinhas{
+    width: 30px;
+    height: 30px;
+}
 
 /* footer */
 
@@ -391,7 +482,7 @@ footer>div {
     justify-content: space-evenly;
     color: var(--branco);
 }
-footer>div>span,p{
+footer>div>span{
     margin-top: 10px;
     color: var(--amarelo);
     text-align: center;
