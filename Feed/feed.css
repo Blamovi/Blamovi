@@ -6,6 +6,7 @@
 :root{
     --font1:'Poppins', sans-serif;
     --cor1: #FBC02C;
+    --cor2: #85141A;
 }
 body{
     background-color: black;
@@ -82,6 +83,7 @@ span{
     margin: 10px 0px;
     cursor: pointer;
     font-family: var(--font1);
+    color: var(--cor1);
 }
 .textomenu{
     font-size: 20px;
@@ -124,7 +126,10 @@ nav{
     width: 70px;
     font-weight: bold;
     background: #FBC02C;
-    ;
+}
+
+.actionBtnComments img{
+    width: 28px;
 }
 
 #divBusca img {
@@ -217,6 +222,10 @@ div.newPost form.formPost textarea{
     cursor: pointer;
 }
 
+.btnFileForm img{
+    width: 20px;
+}
+
 .posts{
     /* margin-bottom: 200px; */
     background-color: #DCE0E6;
@@ -240,7 +249,8 @@ div.newPost form.formPost textarea{
 .filesPost{
     display: flex;
     align-items: center;
-    width: 282px;
+    width: 274px;
+    height: 44px;
     justify-content: center;
     background-color: var(--cor1);
     border: none;
@@ -306,51 +316,18 @@ p{
     cursor: pointer;
 }
 
-/* footer */
-
-
-.img-footer {
-    margin-top: 200px;
-    width: 100%;
-    background-size: cover;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
-}
-
-.uldafooter {
-    color: var(--cor1);
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+.colorir_texto_filmes{
+    color: var(--cor2);
+    font-weight: 600;
     font-family: var(--font1);
-} 
-
-footer>div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    margin-top: 20px;
-} 
-.paragrafoFooter{
-    margin-top: 10px;
-    color: var(--cor1);
-    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-footer>div>img {
-    width: 20px;
-    height: 27px;
-} 
-footer>div>span{
-    color: var(--cor1);
- } 
-
- .footer1{
+.carregamento{
+    width: 100%;
     display: flex;
     align-items: center;
- }  
-
- .img-copy{
-    margin: 5px;
- }
+    justify-content: center;
+    margin-top: 20px;
+}
