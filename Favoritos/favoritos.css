@@ -43,8 +43,7 @@ header {
 }
 
 .posicionamento_header img {
-    width: 35px;
-    height: 28px;
+    width: 45px;
 }
 
 .posicionamento_header>span {
@@ -59,6 +58,16 @@ header {
     height: 27px;
     gap: 5px;
 }
+
+
+
+
+.menu_barras {
+    display: none;
+}
+
+
+
 
 header nav {
     display: flex;
@@ -361,4 +370,76 @@ footer>div>img {
 
 footer>div>span {
     color: var(--amarelo);
+}
+
+
+
+/*  RESPONSIVO */
+
+
+@media screen and (max-width: 1200px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+
+
+    .menu_barras {
+        display: initial;
+    }
+
+    .menu_barras svg {
+        height: 50px;
+        fill: var(--branco);
+    }
+
+    .posicionamento_header {
+        position: relative;
+    }
+
+    .posicionamento_header nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: #060821c3;
+        flex-direction: column;
+        z-index: 1;
+        padding: 50px 0;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    header nav a {
+        margin: 15px 0;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 895px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+
+
+
 }

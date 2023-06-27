@@ -59,11 +59,20 @@ header {
     color: var(--amarelo);
     width: 20px;
     height: 27px;
+    gap: 5px;
 }
 
 .logo>span{
     color: var(--amarelo);
 }
+
+
+
+.menu_barras {
+    display: none;
+}
+
+
 
 header nav {
     display: flex;
@@ -127,7 +136,7 @@ header a:hover{
 
 
 .banner {
-    background-image: url("../img/banner/Frame\ 9.svg");
+    background-image: url("../img/banner/Frame\ 27ff\ 1.png");
     height: 900px;
 
 }
@@ -371,7 +380,7 @@ button[type="submit"]:hover {
 
 
 .img-footer {
-    margin-top: 200px;
+    margin-top: 0;
     width: 100%;
     background-size: cover;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
@@ -423,3 +432,75 @@ footer>div>img {
 footer>div>span {
     color: var(--amarelo);
 }
+
+
+/*  RESPONSIVO */
+
+
+@media screen and (max-width: 1200px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+
+
+    .menu_barras {
+        display: initial;
+    }
+
+    .menu_barras svg {
+        height: 50px;
+        fill: var(--branco);
+    }
+
+    .posicionamento_header {
+        position: relative;
+    }
+
+    .posicionamento_header nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: #060821c3;
+        flex-direction: column;
+        z-index: 1;
+        padding: 50px 0;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    header nav a {
+        margin: 15px 0;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 895px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+
+
+
+}
+
