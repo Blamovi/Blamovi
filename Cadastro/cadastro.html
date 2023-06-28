@@ -13,10 +13,14 @@
     rel="stylesheet">
   <!-- <link href="stylesheet" s href="reset.css"> -->
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <header>
+  <!-- <header>
     <div class="posicionamento_header posicionamento">
       <div class="logo">
         <img src="../Cadastro/imagens/logo.png" alt="logo">
@@ -34,7 +38,26 @@
         <a href="">Login</a>
       </nav>
     </div>
-  </header>
+  </header> -->
+  <header>
+        <div class="posicionamento_header posicionamento">
+            <div class="logo">
+                <img src="../img/logo/logo-branco.svg" alt="logo">
+                <span>Blámovi</span>
+            </div>
+            <div id="divBusca">
+                <alt="Buscar..." />
+                <input type="text" id="txtBusca" placeholder="" />
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <nav>
+                <a href="../Home/home.html">Home</a>
+                <a href="../Favoritos">Favoritos</a>
+                <a href="">Cadastro</a>
+                <a href="">Login</a>
+            </nav>
+        </div>
+    </header>
   <main class="banner">
     <div class="container">
       <a class="links" id="paracadastro"></a>
@@ -138,7 +161,7 @@
 
 
 
-            <div class="input">
+            <div class="input-submit">
               <input type="submit" value="Cadastrar" />
             </div>
 
@@ -182,11 +205,7 @@
 
     </div>
 
-
-
-
   </footer>
-
 
 </body>
 
