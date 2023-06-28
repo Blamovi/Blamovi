@@ -212,13 +212,15 @@ margin: 0px 0px 10px 30px;
 .recomendar{
 background-color: red;
 color: #FBC02C;
-border: solid 0,5px #FBC02C;
+border: solid 1px #FBC02C;
 width: 140px;
 height: 30px;
 text-align: center;
 border-radius: 10px;
-margin-left: 20px;
-margin-right: 90px;
+margin-left: 15px;
+margin-right: 85px;
+text-decoration: none;
+font-weight: bold;
 }
 .coração{
     width: 40px;
@@ -482,7 +484,7 @@ margin: 10px 0px 0px 20px;
 
 
 .img-footer {
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
     background-size: cover;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
@@ -509,6 +511,6 @@ footer>div>span{
 }
 
 footer>div>img {
-    width: 20px;
-    height: 27px;
+    width: 15px;
+    height: 15px;
 }
