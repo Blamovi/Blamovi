@@ -109,15 +109,35 @@ margin-inline: auto;
 }
 
 .logo_no_header {
-        width: 160px;
+width: 160px;
 }
 
 /* Filmes */
 
+.banner_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.superbanner{
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: right;
+    font-size: 40px;
+    text-decoration: solid;
+    font-weight: 100;
+}
+
 
 .img_rec{
-width: 100%;
-height: 250px;
+height: 100px;
+justify-content: right;
+align-items: right;
+margin-bottom: 70px;
+
 }
 h2{
     color: var(--amarelo);
@@ -190,8 +210,8 @@ margin: 0px 0px 10px 30px;
 }
 
 .recomendar{
-background-color: #FBC02C;
-color: #000000;
+background-color: red;
+color: #FBC02C;
 border: solid 0,5px #FBC02C;
 width: 140px;
 height: 30px;
