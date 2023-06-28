@@ -28,7 +28,12 @@
                 <input type="text" id="txtBusca" placeholder="" />
                 <button id="btnBusca">Buscar</button>
             </div>
-            <nav>
+
+            <a id="menu_barras" aria-label="abrir menu" aria-controls="menu_links" aria-expanded="false" aria-haspopup="true" class="menu_barras" href="#" onclick="mostrarMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </a>
+
+            <nav id="menu_links">
                 <a href="../Home/home.html">Home</a>
                 <a href="../Favoritos/favoritos.html">Favoritos</a>
                 <a href="">Cadastro</a>
@@ -38,7 +43,7 @@
     </header>
 
     <aside class="sidebar">
-       <nav>
+       <nav class="navSidebar">
             <button>
                 <span>
                     <img src="./img/Home.svg" alt="">
@@ -110,9 +115,9 @@
             <img class="balanoalvo" src="./img/balanoalvo.svg" alt="">
 
             <div class="actionBtnPost">
-                <button type="button" class="filesPost"><img src="./img/like.svg" alt="Curtir">Curtir</button>
-                <button type="button" class="filesPost"><img src="./img/comentar.svg" alt="Comentar">Comentar</button>
-                <button type="button" class="filesPost"><img src="./img/recomendar.svg" alt="Recomendar">Recomendar</button>
+                <button type="button" class="filesPost"><img src="./img/like.svg" alt="Curtir"><span>Curtir</span></button>
+                <button type="button" class="filesPost"><img src="./img/comentar.svg" alt="Comentar"><span>Comentar</span></button>
+                <button type="button" class="filesPost"><img src="./img/recomendar.svg" alt="Recomendar"><span>Recomendar</span></button>
             </div>
 
             <li class="comentarios">
@@ -152,9 +157,9 @@
             <img class="balanoalvo" src="./img/a-prova-de-fogo-1.jpg" alt="">
 
             <div class="actionBtnPost">
-                <button type="button" class="filesPost"><img src="./img/like.svg" alt="Curtir">Curtir</button>
-                <button type="button" class="filesPost"><img src="./img/comentar.svg" alt="Comentar">Comentar</button>
-                <button type="button" class="filesPost"><img src="./img/recomendar.svg" alt="Recomendar">Recomendar</button>
+                <button type="button" class="filesPost"><img src="./img/like.svg" alt="Curtir"><span>Curtir</span></button>
+                <button type="button" class="filesPost"><img src="./img/comentar.svg" alt="Comentar"><span>Comentar</span></button>
+                <button type="button" class="filesPost"><img src="./img/recomendar.svg" alt="Recomendar"><span>Recomendar</span></button>
             </div>
         </ul>
 
