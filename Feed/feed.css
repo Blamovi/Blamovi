@@ -288,6 +288,10 @@ p{
     font-size: 18px;
 }
 
+#mais{
+    display: none;
+}
+
 .textoComments{
     font-size: 16px;
 }
@@ -339,6 +343,10 @@ p{
 }
 
 @media screen and (max-width: 1304px) {
+   .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    } 
+    
     main{
         width: 60%;
     }
@@ -378,6 +386,8 @@ p{
         margin: 30px 0;
         font-size: 22px;
     }
+
+    
 }
 
 @media screen and (max-width: 1166px) {
