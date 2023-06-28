@@ -133,10 +133,6 @@ header a:hover {
     align-items: center;
 }
 
-.banner_img {
-    height: 660px;
-    width: 610px;
-}
 
 .banner_texto p{
     color: var(--branco);
