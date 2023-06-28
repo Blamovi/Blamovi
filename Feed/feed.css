@@ -80,16 +80,21 @@ span{
     /* margin: 30px 20px 10px 10px; */
     /* justify-content: center; */
     gap: 10px;
-    margin: 10px 0px;
+    margin: 10px 10px;
     cursor: pointer;
     font-family: var(--font1);
-    color: var(--cor1);
+    /* color: var(--cor1); */
 }
 .textomenu{
     font-size: 20px;
     font-family: var(--font1);
     color: var(--cor1);
 }
+
+.menu_barras{
+    display: none;
+}
+
 nav{
     /* display: flex;
     flex-direction: column;
@@ -141,7 +146,7 @@ nav{
     /* top: 0; */
     display: flex;
     flex-direction: column;
-    width: 166px;
+    width: 175px;
     height: 100%;
     padding: 20px 20px 10px 5px;
     border-right: 1px solid #FBC02C;
@@ -341,17 +346,57 @@ p{
     .actionBtnPost button{
         margin-left: 5px;
     }
+
+    .menu_barras{
+        display: initial;
+    }
+
+    .menu_barras svg{
+        height: 50px;
+        fill: white;
+    }
+
+    .posicionamento_header {
+        position: relative;
+    }
+
+    .posicionamento_header nav{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: #060821c3;
+        flex-direction: column;
+        z-index: 1;
+        padding: 5%;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    header nav a{
+        margin: 30px 0;
+        font-size: 22px;
+    }
 }
 
-@media screen and (max-width: 1040px) {
-    #divBusca{
+@media screen and (max-width: 1166px) {
+    /* #divBusca{
         display: none;
-    }
+    } */
 
     .filesPost span{
         display: none;
     }
 }
+
+@media screen and (max-width: 670px) {
+    #divBusca{
+        display: none;
+    }
+}
+
+
 
 @media screen and (max-width: 540px) {
     nav button span .textomenu{
@@ -375,10 +420,9 @@ p{
     
 }
 
-@media screen and (max-width: 640px) {
-    
+@media screen and (max-width: 368px) {
+div.newPost form.formPost textarea{
+    width: 138px;
+}
 }
 
-@media screen and (max-width: 768px) {
-    
-}
