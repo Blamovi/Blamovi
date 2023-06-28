@@ -380,6 +380,10 @@ footer>div>span {
         font-size: 22px;
     }
 
+    .fav_banner_img {
+        display: none;
+    }
+
     .fav-banner{
         height: 773px;
     }
