@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    
+    <script src="../js/script.js" defer></script>
+
 </head>
 
 <body>
@@ -30,7 +34,10 @@
                 <input type="text" id="txtBusca" placeholder="" />
                 <button id="btnBusca">Buscar</button>
             </div>
-            <nav>
+            <a id="menu_barras" aria-label="abrir menu" aria-controls="menu_links" aria-expanded="false" aria-haspopup="true" class="menu_barras" href="#" onclick="mostrarMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </a>
+            <nav id="menu_links">
                 <a href="../Home/home.html">Home</a>
                 <a href="../Favoritos/favoritos.html">Favoritos</a>
                 <a href="">Cadastro</a>
@@ -95,11 +102,13 @@
                         <span>@Mufasa</span>
                     </div>
 
+
                     <img class="tam" src="./img/verificado.svg" alt="">
                     <img class="tam" src="./img/level.svg" alt="">
                     <img class="tam" src="./img/Grey.svg" alt="">
-
+                <div class="botao_do_perfil">
                     <button class="botao"> Editar perfil</button>
+                </div>
                 </div>
 
 
@@ -179,10 +188,10 @@
             <img class="balanoalvo" src="./img/ff666.svg" alt="">
 
             <div class="actionBtnPost">
-                <button type="button" class="filesPost"><img src="./img/like.svg" alt="Curtir">Curtir</button>
-                <button type="button" class="filesPost"><img src="./img/comentar.svg" alt="Comentar">Comentar</button>
+                <button type="button" class="filesPost"><img src="./img/like.svg" alt="Curtir"><span>Curtir</span></button>
+                <button type="button" class="filesPost"><img src="./img/comentar.svg" alt="Comentar"><span>comentar</span></button>
                 <button type="button" class="filesPost"><img src="./img/recomendar.svg"
-                        alt="Recomendar">Recomendar</button>
+                        alt="Recomendar"><span>recomendar</span></button>
             </div>
 
 
@@ -215,15 +224,30 @@
             <img class="balanoalvo" src="./img/vampires.svg" alt="">
 
             <div class="actionBtnPost">
-                <button type="button" class="filesPost"><img src="./img/like.svg" alt="Curtir">Curtir</button>
-                <button type="button" class="filesPost"><img src="./img/comentar.svg" alt="Comentar">Comentar</button>
-                <button type="button" class="filesPost"><img src="./img/recomendar.svg"
-                        alt="Recomendar">Recomendar</button>
+                <button type="button" class="filesPost"><img src="./img/like.svg" alt="Curtir"><span>Curtir</span></button>
+                <button type="button" class="filesPost"><img src="./img/comentar.svg" alt="Comentar"><span>comentar</span></button>
+                <button type="button" class="filesPost"><img src="./img/recomendar.svg" alt="Recomendar"><span>recomendar</span></button>
             </div>
         </ul>
+
+
+ 
+
+
+        <div class="carregamento">
+            <img src="./img/carregandofeed.svg" alt="carregamento">
+        </div>
+
+
+
+
+
     </main>
 
-    <footer>
+    
+    
+    
+    <!-- <footer>
         <img class="img-footer" src="./img/cinema_foto_pexels.svg" alt="">
         <ul class="modific_footer">          
             <a href="../Home/home.html">Home</a>
@@ -240,7 +264,7 @@
                 <p>© 2023 by blamovi.com, Inc.</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
     
 </body>
 
