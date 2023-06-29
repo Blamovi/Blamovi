@@ -404,6 +404,10 @@ p{
     #divBusca{
         display: none;
     }
+
+    .posicionamento_header nav{
+        width: 78%;
+    }
 }
 
 
