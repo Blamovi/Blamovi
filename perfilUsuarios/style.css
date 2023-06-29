@@ -733,6 +733,7 @@ footer>div>img {
             align-items: center;
             width: 70%;
             margin: 20px;
+            
         }
         .series {
             display: flex;
@@ -745,23 +746,7 @@ footer>div>img {
 
       .classificacao{
         flex-direction: column;
-      }
-
-      .posts{
-        width: 90%;
-      }
-
-      .newPost{
-        width: 99%;
-      }
-
-      .classificacao{
-        width: 99%;
         align-items: center;
-      }
-
-      section{
-        width: 99%;
       }
 
       
@@ -800,8 +785,7 @@ footer>div>img {
     }
 
     .entre_imagens {
-        width: 122px;
-        margin: -111px 24px 86px;
+       display: none;
     }
 
     .posicionamento_perfil span {
@@ -953,6 +937,11 @@ footer>div>img {
     .imagem1 {
         height: 112px;
     }
+
+ 
+}
+@media screen and (max-width: 946px){
+
 
  
 }
