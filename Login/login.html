@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="import" href="../img/fonts-txt/Helvetica-Fonts/helvetica-compressed-5871d14b6903a.otf">
-    <link rel="import" href="../img/fonts-txt/TT-Norms-Fonts/TTNorms-Regular.otf">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="login.css">
     <title>Login</title>
@@ -26,6 +27,7 @@
                 <button id="btnBusca">Buscar</button>
             </div>
             <nav>
+                <a href="../Home/home.html">Home</a>
                 <a href="../Favoritos/favoritos.html">Favoritos</a>
                 <a href="">Cadastro</a>
                 <a href="../Login/login.html">Login</a>
@@ -33,42 +35,43 @@
         </div>
     </header>
 
+    <main>    
+        <div class="login-container">
+            <h2>Login</h2>
+            <form>
 
-    <main>
-        <section>
-            <div>            
-                <div class="login-container">
-                    <h2>Login</h2>
-                    <form>
-                        <input type="text" placeholder="Usuário" required="">
-        
-                        <input type="password" placeholder="Senha" required="">
-                        
-                        <p>Esqueçeu sua senha ?<a href="">Aqui</a></p>
-        
-                        <button type="submit">Entrar</button>
-                    </form>
-                    <p>Não tem conta ? <a href="">Cadastrar-se agora</a></p>               
-                    <div class="icon">
-                        <img src="../img/redes/Facebook F.svg" alt="">
-                        <img src="../img/redes/Google.svg" alt="">
-                        <img src="../img/redes/Twitter.svg" alt="">
-                        <img src="../img/redes/YouTube.svg" alt="">
-                    </div>
-                </div>
+                <input  type="text" placeholder="E-mail" required="">
+
+                <input type="password" placeholder="Senha" required="">
+                
+                <p>Esqueçeu sua senha ?<a href="">Aqui</a></p>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem conta ? <a href="">Cadastrar-se agora</a></p>               
+            <div class="icon">
+                <img src="../img/redes/Facebook F.svg" alt="">
+                <img src="../img/redes/Google.svg" alt="">
+                <img src="../img/redes/Twitter.svg" alt="">
+                <img src="../img/redes/YouTube.svg" alt="">
             </div>
-        </section>
-    </main>
+        </div>
+</main>
 
     <footer>
-        <ul>
-            <li>Home</li>
-            <li>Login</li>
-            <li>Pesquisar</li>
-            <li>Noticias</li>
-            <li>Favoritos</li>
-            <li>Informações</li>
+        <ul>          
+            <a href="../Home/home.html">Home</a>
+            <a href="../Login/login.html">Login</a>
+            <a href="">Pesquisar</a>
+            <a href="">Noticias</a>
+            <a href="../Favoritos/favoritos.html">Favoritos</a>
+            <a href="../filmesinformacoes/filmes.html">Informações</a>
         </ul>
+        <div>
+            <div>
+                <p>© 2023 by blamovi.com, Inc.</p>
+            </div>
+        </div>
     </footer>
 </body>
 
