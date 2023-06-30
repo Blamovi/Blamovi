@@ -145,6 +145,11 @@ header a {
     margin-right: 30px;
 }
 
+.lateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .img1{
     width: 80px;
     height: 80px;
@@ -184,7 +189,6 @@ h4{
 p{
     color: var(--branco);
     padding: 1%;
-    margin-right: 30px;
 }
 span{
     color: var(--amarelo);
