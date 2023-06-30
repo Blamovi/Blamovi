@@ -6,6 +6,7 @@
 :root{
     --font1:'Poppins', sans-serif;
     --cor1: #FBC02C;
+    --cor2: #85141A;
 }
 body{
     background-color: black;
@@ -79,15 +80,21 @@ span{
     /* margin: 30px 20px 10px 10px; */
     /* justify-content: center; */
     gap: 10px;
-    margin: 10px 0px;
+    margin: 10px 10px;
     cursor: pointer;
     font-family: var(--font1);
+    /* color: var(--cor1); */
 }
 .textomenu{
     font-size: 20px;
     font-family: var(--font1);
     color: var(--cor1);
 }
+
+.menu_barras{
+    display: none;
+}
+
 nav{
     /* display: flex;
     flex-direction: column;
@@ -124,7 +131,10 @@ nav{
     width: 70px;
     font-weight: bold;
     background: #FBC02C;
-    ;
+}
+
+.actionBtnComments img{
+    width: 28px;
 }
 
 #divBusca img {
@@ -136,7 +146,7 @@ nav{
     /* top: 0; */
     display: flex;
     flex-direction: column;
-    width: 166px;
+    width: 175px;
     height: 100%;
     padding: 20px 20px 10px 5px;
     border-right: 1px solid #FBC02C;
@@ -147,11 +157,17 @@ nav{
     padding: 0;
 }
 
+.navSidebar button span a{
+    display: flex;
+    text-decoration: none;
+}
+
 /* Formulário de envio */
 
 main{
     max-width: 1100px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: 205px;
 }
 
 .newPost{
@@ -217,6 +233,10 @@ div.newPost form.formPost textarea{
     cursor: pointer;
 }
 
+.btnFileForm img{
+    width: 20px;
+}
+
 .posts{
     /* margin-bottom: 200px; */
     background-color: #DCE0E6;
@@ -240,7 +260,8 @@ div.newPost form.formPost textarea{
 .filesPost{
     display: flex;
     align-items: center;
-    width: 282px;
+    width: 274px;
+    height: 44px;
     justify-content: center;
     background-color: var(--cor1);
     border: none;
@@ -270,6 +291,10 @@ p{
 
 .textoPost{
     font-size: 18px;
+}
+
+#mais{
+    display: none;
 }
 
 .textoComments{
@@ -306,51 +331,116 @@ p{
     cursor: pointer;
 }
 
-/* footer */
-
-
-.img-footer {
-    margin-top: 200px;
-    width: 100%;
-    background-size: cover;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
-}
-
-.uldafooter {
-    color: var(--cor1);
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+.colorir_texto_filmes{
+    color: var(--cor2);
+    font-weight: 600;
     font-family: var(--font1);
-} 
-
-footer>div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    margin-top: 20px;
-} 
-.paragrafoFooter{
-    margin-top: 10px;
-    color: var(--cor1);
-    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-footer>div>img {
-    width: 20px;
-    height: 27px;
-} 
-footer>div>span{
-    color: var(--cor1);
- } 
-
- .footer1{
+.carregamento{
+    width: 100%;
     display: flex;
     align-items: center;
- }  
+    justify-content: center;
+    margin-top: 20px;
+}
 
- .img-copy{
-    margin: 5px;
- }
+@media screen and (max-width: 1304px) {
+   .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    } 
+    
+    main{
+        width: 60%;
+    }
+
+    .actionBtnPost button{
+        margin-left: 5px;
+    }
+
+    .menu_barras{
+        display: initial;
+    }
+
+    .menu_barras svg{
+        height: 50px;
+        fill: white;
+    }
+
+    .posicionamento_header {
+        position: relative;
+    }
+
+    .posicionamento_header nav{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: #060821c3;
+        flex-direction: column;
+        z-index: 1;
+        padding: 5%;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    header nav a{
+        margin: 30px 0;
+        font-size: 22px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1166px) {
+    /* #divBusca{
+        display: none;
+    } */
+
+    .filesPost span{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #divBusca{
+        display: none;
+    }
+
+    .posicionamento_header nav{
+        width: 78%;
+    }
+}
+
+
+
+@media screen and (max-width: 540px) {
+    nav button span .textomenu{
+        display: none;
+    }
+
+    .sidebar{
+        width: 75px;
+    }
+
+    main{
+        width: 75%;
+        margin-left: 100px;
+    }
+
+    .navSidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 368px) {
+div.newPost form.formPost textarea{
+    width: 138px;
+}
+}
