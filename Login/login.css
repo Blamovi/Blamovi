@@ -148,7 +148,8 @@ main {
 
 .login-container {
   max-width: 100%;
-  padding: 50px;
+  padding: 30px;
+  margin-top: -100px;
 
   border-radius: 50px;
   border: 1px solid #FFF;
@@ -162,7 +163,7 @@ main {
 h2,p,a {
   color: var(--amarelo);
   text-align: center;
-  height: 40px;
+  height: 30px;
 }
 
 a:hover{
@@ -186,8 +187,12 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-  width: 100%;
+  width: 30%;
   padding: 10px;
+
+  display: flex;
+  margin: auto;
+  justify-content: center;
 
   color: #fff;
   background-color: #157319;
