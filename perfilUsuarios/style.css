@@ -1,21 +1,8 @@
-<<<<<<< HEAD
-* {
-    /*background-color: var(--preto);*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-size: cover;
-    
-
-}
-
-=======
 **{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
->>>>>>> perfilUsuario
 :root {
     --preto: #000000;
     --vermelho: #84141A;
@@ -25,21 +12,6 @@
     /* cinza padrao*/
     --azul: #0C1556;
     --amarelo: #FBC02C;
-<<<<<<< HEAD
-
-    --font1: 'helvetica-compressed-5871d14b6903a.otf';
-    --font2: 'Poppins', sans-serif;
-    --font3: 'TTNorms-Regular.otf';
-    --font4: 'Nova Flat', cursive;
-}
-
-
-/* Cabeçalho */
-header {
-    background-color: var(--preto);
-    height: 70px;
-    padding: 25px;
-=======
     --cor1: #FBC02C;
     
 
@@ -60,19 +32,15 @@ header {
     background-color: black;
     height: 70px;
     /* padding: 25px; */
->>>>>>> perfilUsuario
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
 .logoHeader{
     margin: 5px;
 }
 
->>>>>>> perfilUsuario
 .posicionamento {
     width: 1400px;
     margin: 0 auto;
@@ -85,27 +53,13 @@ header {
 }
 
 .posicionamento_header img {
-<<<<<<< HEAD
-    width: 35px;
-    height: 28px;
-=======
     width: 45px;
->>>>>>> perfilUsuario
 }
 
 .posicionamento_header>span {
     padding-left: 10px;
 }
 
-<<<<<<< HEAD
-.logo {
-    display: flex;
-    align-items: center;
-    color: var(--branco);
-    width: 20px;
-    height: 27px;
-}
-=======
 .logo>img{
     color: var(--cor1);
 }
@@ -120,7 +74,6 @@ header {
 .logo>span{
     color: var(--cor1);
 }
->>>>>>> perfilUsuario
 
 header nav {
     /* background-color: brown; */
@@ -128,19 +81,6 @@ header nav {
     justify-content: space-between;
     align-items: center;
     width: 450px;
-<<<<<<< HEAD
-}
-
-header a {
-    color: var(--amarelo);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: var(--font2);
-    font-size: 16px;
-}
-
-/* barra de pesquisa */
-=======
     color: var(--cor1);
 }
 
@@ -173,7 +113,6 @@ nav{
     margin-left: 30px;
     gap: 10px; */
 }
->>>>>>> perfilUsuario
 
 #divBusca {
     background-color: #E0EEEE;
@@ -181,10 +120,6 @@ nav{
     border-radius: 10px;
     width: 320px;
     height: 31px;
-<<<<<<< HEAD
-    margin-inline: auto;
-=======
->>>>>>> perfilUsuario
 
 }
 
@@ -202,70 +137,6 @@ nav{
 #btnBusca {
     border: none;
     float: right;
-<<<<<<< HEAD
-    height: 28px;
-    border-radius: 7px;
-    width: 70px;
-    font-weight: bold;
-    background: #FBC02C;
-    font-family: var(--font2);
-
-}
-
-img {
-    width: 160px;
-    /* displey flex */
-}
-
-
-aside nav {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin: 30px;
-}
-
-aside nav div img {
-    width: 50px;
-
-}
-
-/*.ajuste{
-   margin: 40px;
-   text-align: center; */
-
-aside a {
-    color: var(--branco);
-    font-family: var(--font2);
-    text-decoration: none;
-
-}
-
-.menu_lateral {
-    width: 20%;
-    background-color: var(--preto);
-}
-
-.ajuste {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    text-transform: capitalize;
-}
-
-main {
-    display: flex;
-    width: 100%;
-    background-color: var(--branco);
-}
-
-section {
-    display: flex;
-    width: 100%;
-    background-color: var(--branco);
-    padding: 80px;
-    background-color: var(--preto);
-=======
     height: 31px;
     border-radius: 7px;
     width: 70px;
@@ -526,7 +397,6 @@ section {
     border: 2px solid var(--cor1);
     border-radius: 3px;
    /* background-image: url(./img/perfilcapa.jpg);*/
->>>>>>> perfilUsuario
 }
 
 section div {
@@ -544,21 +414,13 @@ section div {
     width: 140px;
     display: flex;
     position: absolute;
-<<<<<<< HEAD
-    margin: 2px 50px 100px;
-=======
     margin: 2px 50px 79px;
->>>>>>> perfilUsuario
 
 }
 
 .tam {
     width: 20px;
-<<<<<<< HEAD
-
-=======
     padding: 2px;
->>>>>>> perfilUsuario
 }
 
 .posicionamento_perfil {
@@ -575,14 +437,11 @@ section div {
 
 }
 
-<<<<<<< HEAD
-=======
 
 
 
 
 
->>>>>>> perfilUsuario
 .posicionamento_perfil button {
     width: 130px;
     height: 40px;
@@ -596,11 +455,7 @@ section div {
     font-size: 16px;
     /* margin-left: 600px;*/
     /* margin-left: 600px;*/
-<<<<<<< HEAD
-    margin-left: 480px;
-=======
     /*margin-left: 520px;*/
->>>>>>> perfilUsuario
 }
 
 .estrutura {
@@ -611,29 +466,12 @@ section div {
 
 .icons img {
     width: 20px;
-<<<<<<< HEAD
-    margin: 10px;
-=======
     margin: 7px;
->>>>>>> perfilUsuario
 }
 
 .icons {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-    width: 100%;
-    padding-left: 50px;
-    font-family: var(--font2);
-    
-}
-
-.text {
-    font-family: var(--font2);
-    display: flex;
-    padding: 41px 60px 0;
-}
-=======
     font-family: var(--font2);
     
 }
@@ -683,21 +521,10 @@ nav .imagem_logado{
 
 /* classificaçao */
 
->>>>>>> perfilUsuario
 .classificacao{
     color: var(--preto);
     font-family: var(--font2);
     width: 100%;
-<<<<<<< HEAD
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--preto);
-    padding: 63px 5px;
-    border-radius: 0%;
-    font-weight: 600;
-    text-transform: uppercase;
-=======
     display: flex;
     justify-content: space-evenly;
     background-color: var(--preto);
@@ -706,7 +533,6 @@ nav .imagem_logado{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 22px;
->>>>>>> perfilUsuario
 }
 .series{
     background-color: var(--amarelo);
@@ -714,10 +540,7 @@ nav .imagem_logado{
     flex-direction: column;
     align-items: center;
     width: 20%;
-<<<<<<< HEAD
-=======
     border-radius: 10px
->>>>>>> perfilUsuario
 }
 .filmes{
     background-color: var(--amarelo);
@@ -725,71 +548,6 @@ nav .imagem_logado{
     flex-direction: column;
     align-items: center;
     width: 20%;
-<<<<<<< HEAD
-
-}
-.classificacao span{
-    border-bottom: 3px solid black;
-}
-
-
-
- .feed{
-    width: 100%;
-
-
-}
-.feed_conteudo{
-    width: 100%;
-    font-family: var(--font2);
-    text-align: left;
-    font-size: 18px; 
-    padding: 50px; 
-}
-.feed_conteudo img{
-    width: 100%;
-}
-.botoes{
-    display: flex;
-    justify-content: space-evenly;
-
-}
-.usuario_feed{
- display: flex;
- align-items: center;
- 
-    
-}
-
-.usuario_feed img {
-  margin: 30px;  
-}
-.textos_p {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-family: var(--font2);
-
-}
-.botoes_1{
-    width: 130px;
-    height: 40px;
-    text-align: center;
-    background-color: var(--amarelo);
-    border-radius: 10px;
-    font-family: var(--font2);
-    font-weight: 600;
-    border: 10px;
-    font-size: 16px;
-    background-color: var(--amarelo);
-   
-}
-.botoes{
-    display: flex;
-    padding-bottom: 70px;
-
-}
-=======
     border-radius: 10px
 
 }
@@ -1187,4 +945,3 @@ footer>div>img {
 
  
 }
->>>>>>> perfilUsuario
