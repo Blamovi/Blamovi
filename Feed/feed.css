@@ -157,6 +157,11 @@ nav{
     padding: 0;
 }
 
+.navSidebar button span a{
+    display: flex;
+    text-decoration: none;
+}
+
 /* Formulário de envio */
 
 main{
