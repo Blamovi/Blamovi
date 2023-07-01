@@ -176,7 +176,8 @@ footer ul a:hover {
 
 @media screen and (max-width: 1365px) {
   h1 {
-    display: none;
+    /* display: none; */
+    font-size: 30px;
   }
 
 }
@@ -196,7 +197,8 @@ footer ul a:hover {
 
 @media screen and (max-width: 360px) {
   .menu ul a {
-    display: none;
+    display: none; 
+    
   }
 
   #divbusca {
@@ -212,8 +214,7 @@ footer ul a:hover {
 /*CADASTRO*/
 /* CSS reset */
 *,
-*:before,
-*:after {
+*:before,*:after {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -252,6 +253,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   padding-bottom: 30px;
+  margin-top: 15px;
 
 }
 
@@ -277,18 +279,18 @@ input {
 
 input:not([type="checkbox"]) {
   width: 95%;
-  margin-top: 4px;
-  padding: 10px;
-  border: 1px solid #b2b2b2;
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #b2b2b2;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
 
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 
@@ -378,55 +380,6 @@ input:hover {
   animation-name: fadeOutLeft;
 }
 
-/*fadeInLeft*/
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/*fadeOutLeft*/
-@-webkit-keyframes fadeOutLeft {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(-20px);
-  }
-}
-
-@keyframes fadeOutLeft {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-}
 
 
 
@@ -486,8 +439,9 @@ input:hover {
   width: 90%;
   max-width: 150px;
   height: 50px;
-  */ display: flex;
+  display: flex;
   justify-content: center;
+  margin: 20px;
 
 }
 
@@ -557,7 +511,7 @@ header nav {
 }
 
 header a {
-  color: var(--amarelo);
+  color: #FBC02C;
   text-transform: uppercase;
   text-decoration: none;
   font-family: var(--font1);
@@ -607,3 +561,98 @@ form {
   align-items: center;
   flex-direction: column;
 }
+.linha{
+  width: 480px;
+}
+/*************************************/
+/* Cabeçalho */
+header {
+  background-color: var(--preto);
+  height: 70px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.posicionamento {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.posicionamento_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posicionamento_header img {
+  width: 35px;
+  height: 28px;
+}
+
+.posicionamento_header>span {
+  padding-left: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--branco);
+  width: 20px;
+  height: 27px;
+}
+
+header nav {
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+}
+
+header a {
+  color: #FBC02C;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--font1);
+  font-size: 18px;
+}
+
+/* barra de pesquisa */
+
+#divBusca {
+  background-color: #E0EEEE;
+  border: solid 2px #fdf9f900;
+  border-radius: 10px;
+  width: 320px;
+  height: 31px;
+
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 20px;
+  border: none;
+  height: 27px;
+  width: 243px;
+  border-radius: 8px;
+}
+
+#btnBusca {
+  border: none;
+  float: right;
+  height: 28px;
+  border-radius: 7px;
+  width: 70px;
+  font-weight: bold;
+  background: #FBC02C;
+  ;
+}
+
+#divBusca img {
+  float: left;
+}
+
