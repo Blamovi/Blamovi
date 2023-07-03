@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     background-size: cover;
+    
 
 }
 
@@ -72,10 +73,10 @@ header nav {
 
 header a {
     color: var(--amarelo);
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-decoration: none;
     font-family: var(--font2);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* barra de pesquisa */
@@ -157,21 +158,19 @@ aside a {
 main {
     display: flex;
     width: 100%;
-    height: 100vh;
     background-color: var(--branco);
 }
 
 section {
     display: flex;
     width: 100%;
-    height: 100vh;
-    background-color: var(--cinza);
+    background-color: var(--branco);
     padding: 80px;
     background-color: var(--preto);
 }
 
 section div {
-    background-color: var(--cinza);
+    background-color: var(--branco);
     border-radius: 5px;
 }
 
@@ -226,11 +225,12 @@ section div {
 
 .estrutura {
     width: 100%;
-    height: 100vh;
+    background-color: white;
+    
 }
 
 .icons img {
-    width: 25px;
+    width: 20px;
     margin: 10px;
 }
 
@@ -278,4 +278,62 @@ section div {
 }
 .classificacao span{
     border-bottom: 3px solid black;
+}
+
+
+
+ .feed{
+    width: 100%;
+
+
+}
+.feed_conteudo{
+    width: 100%;
+    font-family: var(--font2);
+    text-align: left;
+    font-size: 18px; 
+    padding: 50px; 
+}
+.feed_conteudo img{
+    width: 100%;
+}
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.usuario_feed{
+ display: flex;
+ align-items: center;
+ 
+    
+}
+
+.usuario_feed img {
+  margin: 30px;  
+}
+.textos_p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--font2);
+
+}
+.botoes_1{
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    background-color: var(--amarelo);
+    border-radius: 10px;
+    font-family: var(--font2);
+    font-weight: 600;
+    border: 10px;
+    font-size: 16px;
+    background-color: var(--amarelo);
+   
+}
+.botoes{
+    display: flex;
+    padding-bottom: 70px;
+
 }
