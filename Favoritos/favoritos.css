@@ -281,15 +281,13 @@ button[type="submit"]:hover {
 
 /* footer */
 
-
 .img-footer {
-    margin-top: 200px;
+    margin-top: 0;
     width: 100%;
     background-size: cover;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
 }
-
 
 ul {
     color: var(--amarelo);
@@ -298,8 +296,8 @@ ul {
     text-align: center;
     font-family: var(--font1);
 
-    position:relative;
-    top:0;
+    position: relative;
+    top: 0;
     transition: all .1s ease-in-out;
 }
 
@@ -308,10 +306,9 @@ ul>a {
     color: var(--amarelo);
 }
 
-ul>a:hover{
+ul>a:hover {
     color: var(--vermelho);
 }
-
 
 footer>div {
     display: flex;
@@ -321,7 +318,8 @@ footer>div {
     margin-top: 20px;
 }
 
-footer>div>span,p {
+footer>div>span,
+p {
     margin-top: 10px;
     color: var(--amarelo);
     text-align: center;
@@ -335,8 +333,6 @@ footer>div>img {
 footer>div>span {
     color: var(--amarelo);
 }
-
-
 
 /*  RESPONSIVO */
 
