@@ -127,10 +127,14 @@ header a:hover{
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: self-start;
 }
-
-
+.fav_banner_img{
+    height: 660px;
+}
+.fav_banner_texto{
+    width: 90%;
+}
 .fav_banner_texto p{
     color: var(--branco);
     font-size: 50px;
@@ -145,11 +149,7 @@ header a:hover{
     padding: 10%;
 }
 
-
-
-
 /* texto */
-
 
 h2,
 h3 {
@@ -176,7 +176,6 @@ span {
     font-size: 25px;
     text-align: center;
 }
-
 
 /* seção filmes e series  */
 
@@ -228,9 +227,11 @@ button[type="submit"] {
     padding: 15px;
     background-color: var(--amarelo);
     color: var(--preto);
+
     border: none;
     border-radius: 15px;
     cursor: pointer;
+
     margin-left: 43%;
     font-size: 23px;
 
@@ -384,10 +385,18 @@ footer>div>span {
         display: none;
     }
 
+    .fav_banner_img {
+        display: none;    
+    }
+
+    .fav_banner_texto {
+        width: 60%;
+    }
+
     .fav-banner{
         height: 773px;
     }
-
+    
     .responsivo{
         display: none;
     }
