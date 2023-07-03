@@ -137,6 +137,10 @@ header a:hover {
     height: 660px;
 }
 
+.banner_texto{
+    width: 90%;
+}
+
 .banner_texto p{
     color: var(--branco);
     font-size: 50px;
@@ -355,20 +359,17 @@ span {
 
 button[type="submit"] {
     margin-top: 5%;
+    padding: 12px;
+    margin-left: 43%;
     display: flex;
-    width: 14%;
-    padding: 15px;
+
     background-color: var(--amarelo);
     color: var(--preto);
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-left: 43%;
     font-size: 23px;
 
-    position: relative;
-    top: 0;
-    transition: all .1s ease-in-out;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
 }
 
 button[type="submit"]:hover {
@@ -471,8 +472,12 @@ footer>div>span {
         font-size: 22px;
     }
 
-    .banner {
-        height: 773px;
+    .banner_img {
+        display: none;    
+    }
+
+    .banner_texto {
+        width: 60%;
     }
 
     .destaque {
