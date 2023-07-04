@@ -23,12 +23,13 @@
 <body>
   
   <header>
+
     <div class="posicionamento_header posicionamento">
-        <div class="logo">
-            <img src="../Cadastro/imagens/logo.png" alt="logo">
-            <span>Blámovi</span>
-        </div>
-        
+      <div class="logo">
+          <img src="../Cadastro/imagens/logo.png" alt="logo">
+          <span>Blámovi</span>
+      </div>
+
         <div id="divBusca">
             <alt="Buscar..." />
             <input type="text" id="txtBusca" placeholder="" />
@@ -42,45 +43,56 @@
         </nav>
     </div>
 </header>
-
   <main class="banner">
     <div class="container">
       <a class="links" id="paracadastro"></a>
       <a class="links" id="paralogin"></a>
 
       <div class="content">
-        <!--FORMULÁRIO DE login-->
+        <!--FORMULÁRIO DE CADASTRO-->
         <div id="cadastro">
           <form method="post" action="">
-            <h1>Login</h1>
+            <h1>contato</h1>
 
-            
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/icon User.png">
+              <div class="input-nome">
+                <label for="nome_cad">Seu Nome</label>
+                <input id="nome_cad" name="nome_cad" required="required" type="text">
+              </div>
+
+            </div>
 
             <div class="input">
               <img class="form-label" src="../Cadastro/imagens/Group Message.png">
               <div class="input-email">
                 <label for="email_cad">Seu e-mail</label>
-                <input id="email_cad" name="email_cad" required="required" type="email" placeholder="E-mail ou Usuario" />
+                <input id="email_cad" name="email_cad" required="required" type="email" />
               </div>
             </div>
+
+            
 
             <div class="input">
-              <img class="form-label" src="../Cadastro/imagens/Lock.png">
-              <div class="input-senha">
-                <label for="senha_cad">Sua senha</label>
-                <input id="senha_cad" name="senha_cad" required="required" type="password" />
+              <img class="form-label" src="../Cadastro/imagens/icon User.png">
+              <div class="input-user">
+                <label for="user">Usuario</label>
+                <input id="user" name="user" required="required" type="text">
               </div>
+
             </div>
 
-           
-
-
+            <form>
+              
+              <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8" placeholder="Insira seu texto"></textarea><br>
+            </form>
+            
             <div class="input-submit">
               <input type="submit" value="Cadastrar" />
             </div>
 
 
-          <hr class="linha">
+            <hr class="linha"> 
             <div class="alinhamento">
               <p class="link2">Já tem conta?<a href="#paralogin"> <br>Cadastre-se agora! </a></p>
             </div>
