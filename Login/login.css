@@ -233,36 +233,6 @@ footer>div>span {
 }
 
 
-
-@media screen and (max-width: 1000px) {
-  .card {}
-
-  .poster>img {}
-
-  .hamburguer {
-    display: none;
-  }
-
-
-
-}
-
-@media screen and (max-width: 360px) {
-  .menu ul a {
-    display: none; 
-    
-  }
-
-  #divbusca {
-    display: none;
-  }
-
-  .hamburguer {
-    display: initial;
-  }
-
-}
-
 /*CADASTRO*/
 /* CSS reset */
 *,
@@ -356,7 +326,6 @@ input:hover {
   text-align: right;
   border-top: 1px solid #dbe5e8;
   /* display: flex; */
-  -webkit-border-radius: 0 0 5px 5px;
 }
 
 .link a,
@@ -365,7 +334,6 @@ input:hover {
   padding: 10px;
   color: #FBC02C;
   margin-left: 10px;
-  -webkit-border-radius: 4px;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
   text-decoration: solid;
@@ -407,6 +375,7 @@ input:hover {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: both;
+  
 
   animation-duration: 0.5s;
   animation-timing-function: ease;
