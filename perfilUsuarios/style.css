@@ -813,7 +813,7 @@ footer>div>img {
 }
 
    /* BOTAO */
-@media screen and (max-width: 792px){
+/*@media screen and (max-width: 792px){
 
     .servicos>div>div:nth-child(2) {
         margin-top: 100px;
@@ -873,7 +873,7 @@ footer>div>img {
     }
 
     
-}
+}*/
 
 
 
@@ -890,6 +890,16 @@ footer>div>img {
         display: none;
     }
 
+   
+
+
+
+}
+@media screen and (max-width: 768px) {
+
+    header nav {
+        display: none;
+    }
 
 
 }
