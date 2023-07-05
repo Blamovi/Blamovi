@@ -106,6 +106,13 @@ span{
     font-family: var(--font1);
     color: var(--cor1);
 }
+.textomenu>a{
+    text-decoration: none;
+    color: var(--amarelo);
+}
+.textomenu a:hover{
+    color: var(--vermelho);
+}
 nav{
     /* display: flex;
     flex-direction: column;

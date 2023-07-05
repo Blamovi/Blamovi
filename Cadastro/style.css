@@ -5,9 +5,12 @@
 }
 
 :root {
-  --azul: #060821;
-  --rosa: #C12D6D;
+  --preto: #000000;
+  --vermelho: #84141A;
   --branco: #ffffff;
+  --azul: #0C1556;
+  --amarelo: #FBC02C;
+  --verde: #157f17;
 
   --font1: 'Titillium Web', sans-serif;
   --font2: 'Righteous', cursive;
@@ -20,8 +23,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  /*background-image: url('../BlaMovi/25-05-2023/bla/imagem/');*/
-
 }
 
 header div {
@@ -30,15 +31,12 @@ header div {
   width: 1400px;
   margin: 0 auto;
   align-items: center;
-  /* background-color: aqua; */
-
 }
 
 header img {
   width: 80px;
   height: 80px;
   color: #FBC02C;
-
 }
 
 #divbusca {
@@ -65,21 +63,16 @@ header img {
   width: 100%;
   max-width: 400px;
 }
-
 body {
   background-color: #000000;
 }
-
 .menu ul {
   display: flex;
   flex-wrap: wrap;
-
 }
-
 .menu ul li {
   text-decoration: none;
 }
-
 .menu ul a {
   color: #FBC02C;
   margin: 10px;
@@ -89,28 +82,50 @@ body {
   align-items: center;
 
 }
-
 .menu ul a:hover {
   color: #e40810;
   transform: scale(1.5);
   text-shadow: 0px 5px 10px rgba(239, 180, 4, 0.6);
 
 }
-
 .hamburguer {
   width: 50px;
   height: 50px;
-
   fill: var(--branco);
 }
-
-
 .banner {
-
   background-image: url("../Cadastro/imagens/cinema_foto_pexels\ 1.png");
   background-position: center;
   background-repeat: no-repeat;
+}
 
+/* botao */
+
+.input-submit a{
+  width: 95%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  background-color: var(--verde);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-submit a:hover{
+  background-color: var(--vermelho);
+}
+
+.alinhamento>p{
+  color: var(--branco);
+}
+
+.link2 a{
+  color: var(--amarelo);
+}
+
+.link2 a:hover{
+  color: var(--vermelho);
 }
 
 

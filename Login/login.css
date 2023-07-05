@@ -10,6 +10,7 @@
   --branco: #ffffff;
   --azul: #0C1556;
   --amarelo: #FBC02C;
+  --verde: #157f17;
 
   --font1: 'Archivo', sans-serif;
   --font2: 'TTNorms-Regular.otf';
@@ -183,6 +184,35 @@ body {
   text-decoration: none;
   color: var(--branco);
   font-size: 18px;
+}
+.input-submit a{
+  width: 95%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  background-color: var(--verde);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-submit a:hover{
+  background-color: var(--vermelho);
+}
+
+.link3{
+  margin-bottom: 15px;
+  width: 450px;
+  text-align: end;
+}
+
+.link3>a{
+  color: var(--amarelo);
+  font-size: 18px;
+  text-decoration: none;
+}
+.link3>a:hover{
+  color: var(--vermelho);
 }
 
 /* footer */

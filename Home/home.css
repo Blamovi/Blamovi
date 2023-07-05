@@ -12,6 +12,7 @@
     --branco: #ffffff;
     --azul: #0C1556;
     --amarelo: #FBC02C;
+    --verde: #157f17;
 
     --font1: 'Archivo', sans-serif;
     --font2: 'TTNorms-Regular.otf';
@@ -357,22 +358,24 @@ span {
     color: var(--branco);
 }
 
-button[type="submit"] {
+.input-submit {
     margin-top: 5%;
-    padding: 12px;
+    padding: 13px;
     margin-left: 43%;
     display: flex;
-
     background-color: var(--amarelo);
     color: var(--preto);
     font-size: 23px;
-
     border-radius: 15px;
     border: none;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 18%;
 }
 
-button[type="submit"]:hover {
+.input-submit:hover {
     background-color: var(--branco);
     top: -4px;
     box-shadow: 0 4px 3px rgba(0, 0, 0, 0.267);
